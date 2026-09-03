@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+      - 'docs/**'
 
 jobs:
   deploy:
@@ -23,4 +27,4 @@ jobs:
           localDir: '.'
           remoteDir: '/customers/f/3/b/cirq67giw/users/cirq67giw_ssh/webroots/www'
           concurrency: 1
-          exclude: '.git*,.github/**,README.md,*.png,*.jpg,*.jpeg'
+          exclude: '.git*,.github/**,README.md,docs/**'
