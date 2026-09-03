@@ -1,2 +1,29 @@
-# Deny direct access to internal templates and data. Security best practice!
-RewriteRule ^src/ - [F,L]
+# Detta under är optimal prestandakonfiguration för att hjälpa vår Lighthouse score att komma närmare 100 
+# Apache är skrivet i C och `mod_rewrite.c`, `mod_deflate.c` och `mod_expires.c` är faktiska C-moduler!
+
+# Denna ser till att mappar som inte har en index-fil ger ett 403 Forbidden-fel
+Options -Indexes 
+
+# Säkerhetsregler: Returnerar 403 Forbidden vid försök att läsa src/ eller .git via webbläsaren
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^src/ - [F,L]
+    RewriteRule ^\.git - [F,L]
+</IfModule>
+
+# Gzip-komprimering: Komprimerar text- och kodfiler dynamiskt för snabbare överföring
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Webbläsarcachning: Instruerar webbläsaren att lagra statiska filer lokalt (1 år för media/kod, 1 månad för JSON)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType application/json "access plus 1 month"
+</IfModule>
