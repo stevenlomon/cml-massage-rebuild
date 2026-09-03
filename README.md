@@ -15,7 +15,7 @@ Den ursprungliga webbplatsen för **CML Massage & Wellness** (Katrineholm) drift
 
 ---
 
-## Prestanda Före Migrering (Baseline)
+## Prestanda före migrering (Baseline)
 
 Mätning utförd via Google Lighthouse / one.com Performance Monitor på den ursprungliga WordPress-sajten:
 
@@ -34,7 +34,7 @@ Mätning utförd via Google Lighthouse / one.com Performance Monitor på den urs
 
 ---
 
-## Planerad arkitektonisk Lösning
+## Planerad arkitektonisk lösning
 
 Istället för att lappa över WordPress med ytterligare cache-tillägg migrerades hela webbplatsen till en egenutvecklad, ren arkitektur byggd från grunden:
 
@@ -63,7 +63,7 @@ Projektet planeras använda en automatiserad distributionspipeline:
     
 - Driftsättningen tar under 5 sekunder och uppdaterar endast förändrade filer utan driftavbrott.
 
-## Planerad Projektstruktur
+## Planerad projektstruktur
 
 ```text
 cml-massage-rebuild/
@@ -89,4 +89,22 @@ cml-massage-rebuild/
 ├── behandlingar.php          # Fullständig behandlingsmeny
 ├── friskvard.php             # Information om Benify / Epassi
 └── kontakt.php               # Hitta hit & öppettider
+```
+
+## Migrationsprocess & Dataintegritet
+
+Innan någon ny kod driftsattes eller filer raderades upprättades en fullständig lokal säkerhetskopia av hela WordPress-miljön från one.com för att garantera noll dataförlust (bilder, media och databaskonfigurationer).
+
+### 1. Etablering av SFTP-anslutning
+Autentisering och verifiering av serverns nyckelfingeravtryck mot produktionsservern via port 22:
+
+```bash
+sftp -P 22 cirq67giw_ssh@ssh.cirq67giw.service.one
+```
+
+### 2. Fullständig spegling av Webbrot
+Nedladdning av den aktiva WordPress-installationen (webroots/www) till en isolerad lokal backup-mapp:
+
+```bash
+sftp -P 22 -r cirq67giw_ssh@ssh.cirq67giw.service.one:webroots/www ~/Documents/cml_backup
 ```
