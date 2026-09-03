@@ -21,5 +21,6 @@ jobs:
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
           localDir: '.'
-          remoteDir: 'webroots/www'
+          remoteDir: '/customers/f/3/b/cirq67giw/users/cirq67giw_ssh/webroots/www'
+          concurrency: 1
           exclude: '.git*,.github/**,README.md,*.png,*.jpg,*.jpeg'
