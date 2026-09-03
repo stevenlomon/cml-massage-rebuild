@@ -3,8 +3,6 @@
 Produktionssajt: [cmlmassagewellness.se](https://www.cmlmassagewellness.se/)  
 Teknisk stack: Vanilla PHP 8.x, Semantisk HTML5, Modern CSS (Custom Properties), GitHub Actions (CI/CD)
 
----
-
 ## Bakgrund & Problemformulering
 
 Den ursprungliga webbplatsen för **CML Massage & Wellness** (Katrineholm) driftades på en WordPress-installation med page-buildern Bricks och 13 aktiva tillägg (plugins). Vid en teknisk granskning och säkerhetsaudit identifierades flera kritiska problem:
@@ -12,8 +10,6 @@ Den ursprungliga webbplatsen för **CML Massage & Wellness** (Katrineholm) drift
 1. **Säkerhetsrisk (Nulled Programvara):** Sajten körde en piratkopierad version av temat med manuellt injicerade licensoverrides i `functions.php`, vilket blockerade säkerhetsuppdateringar och exponerade servern för potentiella bakdörrar.
 2. **Extrem Prestandaförlust:** Trots att webbplatsen i grunden är en ren informations- och konverteringssida mot **Bokadirekt**, laddades onödiga Stripe-tillägg, kontaktformulärsskript och spårningsbibliotek på varje enskild sidvisning.
 3. **Konverteringshinder på Mobil:** En Time to Interactive (TTI) på över 18 sekunder innebar att potentiella kunder på mobila enheter möttes av långa laddtider och låst gränssnitt.
-
----
 
 ## Prestanda före migrering (Baseline)
 
@@ -32,8 +28,6 @@ Mätning utförd via Google Lighthouse / one.com Performance Monitor på den urs
 | **Bästa praxis** | **59 / 100** | 90+ | **100** |
 | **SEO** | **85 / 100** | 90+ | **100** |
 
----
-
 ## Planerad arkitektonisk lösning
 
 Istället för att lappa över WordPress med ytterligare cache-tillägg migrerades hela webbplatsen till en egenutvecklad, ren arkitektur byggd från grunden:
@@ -44,24 +38,30 @@ Istället för att lappa över WordPress med ytterligare cache-tillägg migrerad
 * **Affärsfokus & Konvertering:** Djuplänkning direkt in i Bokadirekts bokningsflöde med automatisk hantering av UTM-parametrar och tydlig information kring friskvårdspartners (Benify, Epassi).
 * **Lokal SEO & Schema:** Implementering av `HealthAndBeautyBusiness` via JSON-LD direkt i `<head>` för maximal synlighet vid lokala sökningar i Katrineholm.
 
----
-
 ## CI/CD Pipeline & DevOps
 
-Projektet planeras använda en automatiserad distributionspipeline:
+Projektet använder en helautomatiserad distributionspipeline byggd med GitHub Actions:
 
 ```text
-[Lokal Utveckling] 
+[Lokal Utveckling (dev)] 
+       │  Lokal verifiering via php -S localhost:8000
+       ▼
+[Branch Merge: dev ➔ main]
        │  git push origin main
        ▼
 [GitHub Actions Runner]
-       │  Validering & SFTP-synkning via port 22
+       │  Autentisering & SFTP-synk (concurrency: 1)
        ▼
 [one.com Produktionsserver (/webroots/www)]
-```
-- Känsliga uppgifter (`SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`) hanteras via krypterade **GitHub Secrets**.
+````
+
+- **Strikt Miljöisolering:** Endast commits som landar på `main`-branchen triggar driftsättning till produktionsservern. Pågående utveckling sker isolerat i `dev`.
     
-- Driftsättningen tar under 5 sekunder och uppdaterar endast förändrade filer utan driftavbrott.
+- **Känsliga Uppgifter:** Serveruppgifter (`SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`) är krypterade via **GitHub Secrets**.
+    
+- **Infrastrukturanpassning:** Pipelinen är konfigurerad med `concurrency: 1` för att respektera one.coms strikta sessionstak över SFTP och eliminera brutna anslutningar.
+    
+- **Noll Driftavbrott:** Driftsättningen tar under 5 sekunder och uppdaterar uteslutande förändrade filer direkt i webbroten.
 
 ## Planerad projektstruktur
 
