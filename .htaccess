@@ -1,0 +1,2 @@
+# Deny direct access to internal templates and data. Security best practice!
+RewriteRule ^src/ - [F,L]

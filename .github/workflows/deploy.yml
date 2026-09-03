@@ -1,0 +1,25 @@
+name: Deploy to one.com
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Sync to Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP
+        uses: wangyucode/sftp-upload-action@v3
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          localDir: '.'
+          remoteDir: 'webroots/www'
+          exclude: '.git*,.github/**,README.md,*.png,*.jpg,*.jpeg'
