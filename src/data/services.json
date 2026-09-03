@@ -1,0 +1,189 @@
+[
+  {
+    "id": "svensk-klassisk-massage",
+    "title": "Svensk Klassisk Massage",
+    "description": "En lugnande massage behandling som passar de allra flesta.",
+    "long_description": "Att vara ny till massage gör Klassisk Svensk Massage till en perfekt start. Det kan användas både för avslappning och lindring av muskelvärk och är känd för sina djupgående och mångsidiga tekniker.",
+    "benefits": [
+      "Hjälper sänka blodtrycket",
+      "Mjukar upp spända muskler",
+      "Förbättrad sömnkvalitet"
+    ],
+    "options": [
+      { "label": "Halvkropp", "duration": "60 min", "price": 785 },
+      { "label": "Helkropp", "duration": "60 min", "price": 785 },
+      { "label": "Helkropp", "duration": "90 min", "price": 1177 }
+    ],
+    "image": "svensk-klassisk-massage.jpg",
+    "featured": true
+  },
+  {
+    "id": "head-neck-shoulders",
+    "title": "Head, Neck & Shoulders",
+    "description": "En massage med fokus på spänningar och smärta i huvud, axlar och nacke.",
+    "long_description": "Om du har problem specifikt i huvud, axlar eller nacke erbjuder vi en massage där fokus läggs på att lindra spänningar och smärta i dessa områden.",
+    "benefits": [
+      "Lindrar spänningar och smärta i huvud, nacke och axlar",
+      "Minskar frekvensen av spänningshuvudvärk",
+      "Ökar rörlighet och flexibilitet i nacke och axlar"
+    ],
+    "options": [
+      { "duration": "60 min", "price": 785 }
+    ],
+    "image": "head-neck-shoulders.jpg",
+    "featured": true
+  },
+  {
+    "id": "djupvavnadsmassage",
+    "title": "Djupvävnadsmassage",
+    "description": "Massering av muskelvävnader för bl.a. smärtlindring och ökad flexibilitet.",
+    "long_description": "Djupvävnadsmassage är en kraftfull och terapeutisk massageteknik som syftar till att nå de djupare lagren av muskelvävnad och fascia i kroppen.",
+    "benefits": [
+      "Smärtlindring",
+      "Ökad blodcirkulation",
+      "Förbättrad rörlighet och flexibilitet"
+    ],
+    "options": [
+      { "duration": "60 min", "price": 869 },
+      { "duration": "90 min", "price": 1177 }
+    ],
+    "image": "djupvavnadsmassage.jpg",
+    "featured": true
+  },
+  {
+    "id": "lymfmassage",
+    "title": "Lymfmassage",
+    "description": "Stimulerar lymfsystemet för att minska svullnad och stärka immunförsvaret.",
+    "long_description": "Lymfmassage är en skonsam massageteknik som stimulerar lymfsystemet för att främja avlägsnande av avfallsprodukter och toxiner från kroppen.",
+    "benefits": [
+      "Minskar svullnad och vätskeansamling",
+      "Stärker immunförsvaret",
+      "Främjar avgiftning"
+    ],
+    "options": [
+      { "duration": "90 min", "price": 1177 },
+      { "duration": "120 min", "price": 1245 }
+    ],
+    "image": "lymfmassage.jpg",
+    "featured": true
+  },
+  {
+    "id": "koppning",
+    "title": "Koppning",
+    "description": "Traditionell koppningsteknik som främjar blodcirkulation och smärtlindring.",
+    "long_description": "Koppning är en traditionell behandlingsmetod som använder sugkoppar för att skapa undertryck på huden, vilket främjar blodcirkulationen och lindrar muskelspänningar.",
+    "benefits": [
+      "Förbättrad blodcirkulation",
+      "Smärtlindring",
+      "Minskade muskelspänningar"
+    ],
+    "options": [
+      { "duration": "60 min", "price": 785 },
+      { "duration": "90 min", "price": 1177 }
+    ],
+    "image": "koppning.jpg",
+    "featured": false
+  },
+  {
+    "id": "taktil-massage",
+    "title": "Taktil Massage",
+    "description": "En mjuk och omslutande massage som stimulerar kroppens lugn-och-ro-system.",
+    "long_description": "Taktil massage är en mjuk och omslutande massageteknik som fokuserar på att stimulera kroppens lugnande nervsystem genom varsamma, medvetna beröringar.",
+    "benefits": [
+      "Djup avslappning",
+      "Minskad ångest och oro",
+      "Förbättrad sömnkvalitet"
+    ],
+    "options": [
+      { "duration": "60 min", "price": 785 },
+      { "duration": "90 min", "price": 1177 }
+    ],
+    "image": "taktil-massage.jpg",
+    "featured": false
+  },
+  {
+    "id": "hot-stone-massage",
+    "title": "Hot Stone Massage",
+    "description": "Varma stenar kombinerat med massage för djup muskelavslappning.",
+    "long_description": "Hot Stone Massage använder uppvärmda basaltstenar som placeras på specifika punkter på kroppen, kombinerat med massagetekniker för djupgående muskelavslappning.",
+    "benefits": [
+      "Djup muskelavslappning",
+      "Förbättrad blodcirkulation",
+      "Stressreducering"
+    ],
+    "options": [
+      { "duration": "60 min", "price": 800 },
+      { "duration": "90 min", "price": 1177 }
+    ],
+    "image": "hot-stone-massage.jpg",
+    "featured": false
+  },
+  {
+    "id": "body-clay-wrapping-relax",
+    "title": "Body Clay Wrapping Relax",
+    "description": "En 3h helkroppsbehandling med bl.a. alginpackning för en komplett detox.",
+    "long_description": "Body Clay Wrapping Relax är en lyxig helkroppsbehandling som kombinerar lera, alginpackning och massage för en komplett detox- och avslappningsupplevelse.",
+    "benefits": [
+      "Avgiftning och hudförnyelse",
+      "Djup avslappning",
+      "Förbättrad hudton och elasticitet"
+    ],
+    "options": [
+      { "duration": "180 min", "price": 2300 }
+    ],
+    "image": "body-clay-wrapping-relax.jpg",
+    "featured": false
+  },
+  {
+    "id": "aroma-scrub-massage",
+    "title": "Aroma Scrub Massage",
+    "description": "Skrubbning med eteriska oljor för att exfoliera huden och främja avslappning.",
+    "long_description": "Aroma Scrub Massage är en terapeutisk behandling som kombinerar aromaterapi, kroppsskrubb och massage för att exfoliera huden, förbättra blodcirkulationen och ge djup avslappning.",
+    "benefits": [
+      "Hudförbättring",
+      "Förbättrad cirkulation och avgiftning",
+      "Mental klarhet och välbefinnande"
+    ],
+    "options": [
+      { "label": "Doft av choklad", "duration": "90 min", "price": 1177 },
+      { "label": "Doft av citrongräs och rosmarin", "duration": "90 min", "price": 1177 }
+    ],
+    "image": "aroma-scrub-massage.jpg",
+    "featured": false
+  },
+  {
+    "id": "top-to-toe-deluxe-detox",
+    "title": "Top to Toe Deluxe Detox",
+    "description": "En 3h helkroppsbehandling med bl.a. alginpackning för en komplett detox.",
+    "long_description": "Top to Toe Deluxe Detox är en omfattande helkroppsbehandling som kombinerar flera tekniker för en total förnyelse- och avslappningsupplevelse.",
+    "benefits": [
+      "Helkroppsavgiftning",
+      "Hudförnyelse",
+      "Total avslappning"
+    ],
+    "options": [
+      { "duration": "180 min", "price": 2300 }
+    ],
+    "image": "top-to-toe-deluxe-detox.jpg",
+    "featured": false
+  },
+  {
+    "id": "ir-bastu-och-massage",
+    "title": "IR Bastu och Massage",
+    "description": "Kombinera din favoritmassage med infraröd bastu för djupare avslappning.",
+    "long_description": "IR Bastu kombinerat med massage främjar djupare muskelavslappning och förbättrad cirkulation. Infraröd bastu värmer kroppen direkt, vilket hjälper mig komma in djupare under massagens gång.",
+    "benefits": [
+      "Hjälper sänka blodtrycket",
+      "Mjukar upp spända muskler",
+      "Ökar kroppens förbränning"
+    ],
+    "options": [
+      { "label": "Valfri massage 60 min + 45 min IR Bastu", "duration": "105 min", "price": 1149 },
+      { "label": "Djupvävnadsmassage 60 min + 30 min IR Bastu", "duration": "90 min", "price": 1000 },
+      { "label": "Lymfmassage 90 min + 30 min IR Bastu", "duration": "120 min", "price": 1245 },
+      { "label": "Svensk Klassisk Massage 60 min + 30 min IR Bastu", "duration": "90 min", "price": 1000 }
+    ],
+    "image": "ir-bastu.jpg",
+    "featured": false
+  }
+]
