@@ -24,3 +24,29 @@ Jag tänker att vi kör en `mailto:` länk till att börja med. En minimal `mail
 
 > It's a common PHP pattern for config files: cheaper than JSON (no decode step, PHP opcache caches it natively) and allows comments inline.
 > Good mental model: config → PHP, catalog → JSON.
+
+Jag märker nu också i `helpers.php` som skrevs att min och Claudes `e` function för att slippa skriva `htmlspecialchars` skiljer sig åt.  
+Min som jag hade i en php inlämning:
+```
+function e(?string $value): string {
+    return htmlspecialchars($value ?? '', ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+```
+Claudes
+```
+function e(string $value): string {
+    return htmlspecialchars($value, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+```
+När jag pekade ut detta och frågade skrev den:  
+> Good eye. The difference is **null safety**:
+> 
+> **Your version (`?string` + `??`):** Accepts both `string` and `null`. If someone passes `null`, the `??` coalesces it to an empty string before `htmlspecialchars` sees it. This is defensive — it won't blow up if a data source returns `null` for a missing field.
+> 
+> **My version (`string` only):** Strict — passing `null` throws a `TypeError` at runtime. It forces the caller to handle missing data before escaping.
+> 
+> Your version is better for this project. The data comes from flat files you control, but fields like `bokadirekt_id` or optional labels in `services.json` can legitimately be `null` when decoded from JSON. Your signature catches that gracefully instead of crashing the page.  
+
+Wonderful! Tiden jag la ner på php fundamentals is paying off!
+
+Att använda `static` och göra en null check är nytt och fortfarande lite förvirrande. Claude verkar säker när den förklarar det så jag köper det for now. 
