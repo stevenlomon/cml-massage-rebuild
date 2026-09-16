@@ -12,3 +12,15 @@ Det här är den enda limitation som Claude Code pekar ut nu i början:
 > The contact form on the current site submits via WordPress/WPForms. Since we're going formless PHP on shared hosting with no mail server guaranteed, I'd recommend replacing it with a mailto: link or a direct "ring/maila mig" approach — unless you want me to build a minimal PHP mail() handler. The form is lower-priority for launch since the primary conversion funnel goes through Bokadirekt anyway.  
 
 Jag tänker att vi kör en `mailto:` länk till att börja med. En minimal `mail()` handler kan komma senare
+
+## Sep 16
+`salon.php` är en associative array! Essentially en config fil där vi har råd att använda ren php och en associative array. JSON är att föredra för services då det är nested complex och repititiv data. 
+> JSON is better here because:
+> 
+> - It's a data format, not code — cleaner for structured catalogs
+> - It can be consumed by other things if needed (a future JS frontend, a build script, an API)
+> - It's easier to validate and edit when it's uniform tabular-ish data
+> - If someone non-technical ever needs to update prices, JSON is less intimidating than PHP syntax
+
+> It's a common PHP pattern for config files: cheaper than JSON (no decode step, PHP opcache caches it natively) and allows comments inline.
+> Good mental model: config → PHP, catalog → JSON.
