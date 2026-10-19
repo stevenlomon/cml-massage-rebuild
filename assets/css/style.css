@@ -821,6 +821,162 @@ h3 {
     background-color: var(--color-bg-light);
 }
 
+/* ===== Page Hero (Inner Pages) ===== */
+.page-hero {
+    background-color: var(--color-primary);
+    padding: 3rem 0 3.5rem;
+}
+
+.page-hero .section-label {
+    color: var(--color-accent);
+}
+
+.page-hero .section-label::after {
+    background-color: rgba(251, 251, 255, 0.3);
+}
+
+.page-hero h1 {
+    color: var(--color-text-light);
+    margin-bottom: 0.75rem;
+}
+
+.page-hero p {
+    color: var(--color-text-light);
+    opacity: 0.9;
+    max-width: 600px;
+    font-size: 1.05rem;
+}
+
+/* ===== Treatment Detail ===== */
+.treatment-detail {
+    padding: 4rem 0;
+    scroll-margin-top: 80px;
+}
+
+.treatment-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.treatment-detail-grid.reverse {
+    direction: rtl;
+}
+
+.treatment-detail-grid.reverse > * {
+    direction: ltr;
+}
+
+.treatment-detail-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+}
+
+.treatment-detail-content h2 {
+    margin-bottom: 1rem;
+}
+
+.treatment-detail-content > p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+/* ===== Treatment Benefits ===== */
+.treatment-benefits {
+    margin-bottom: 1.5rem;
+}
+
+.treatment-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.treatment-benefits li::before {
+    content: '\2713';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ===== Pricing Table ===== */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.pricing-table thead {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.pricing-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-label);
+}
+
+.pricing-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(17, 63, 83, 0.1);
+}
+
+.pricing-table .price {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* ===== Partner Cards (Friskvård) ===== */
+.partner-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.partner-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+}
+
+.partner-card img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto 1.5rem;
+}
+
+.partner-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.partner-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -880,5 +1036,19 @@ h3 {
 
     .hero {
         min-height: 60vh;
+    }
+
+    .treatment-detail-grid,
+    .treatment-detail-grid.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .treatment-detail-image img {
+        height: 250px;
+    }
+
+    .partner-cards {
+        grid-template-columns: 1fr;
     }
 }
