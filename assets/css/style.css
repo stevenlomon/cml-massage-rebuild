@@ -345,9 +345,9 @@ h3 {
 }
 
 .benefit-card .icon {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 1rem;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.25rem;
     color: var(--color-primary);
 }
 
@@ -363,7 +363,7 @@ h3 {
 /* ===== Treatment Cards ===== */
 .treatments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -372,7 +372,7 @@ h3 {
     position: relative;
     border-radius: var(--radius);
     overflow: hidden;
-    min-height: 220px;
+    min-height: 280px;
     display: flex;
     align-items: flex-end;
     background-size: cover;

@@ -14,10 +14,16 @@ $page_description = $page_description ?? e($salon['meta']['description']);
     <title><?= $page_title ?></title>
     <meta name="description" content="<?= $page_description ?>">
 
-    <!-- Preload critical fonts -->
+    <!-- Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600&display=swap"></noscript>
+
+    <!-- Preload hero image (LCP element) -->
+    <?php if ($page === 'index'): ?>
+    <link rel="preload" as="image" href="/assets/images/hero.jpg">
+    <?php endif; ?>
 
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/style.css">

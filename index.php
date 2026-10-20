@@ -3,7 +3,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/src/templates/header.php';
 $salon = get_salon_data();
 $services = get_services();
-$featured = array_filter($services, fn($s) => $s['featured'] ?? false);
+$preview = array_slice($services, 0, 6);
 ?>
 
 <!-- Hero -->
@@ -27,21 +27,21 @@ $featured = array_filter($services, fn($s) => $s['featured'] ?? false);
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="icon">
-                    <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 4c-2.2 0-4 1.8-4 4v2c-3.3 1.5-6 4.5-6 8.5 0 3 1.5 5.5 3.5 7.5l-5 5c-.8.8-.8 2 0 2.8L16 37.3c.8.8 2 .8 2.8 0l5-5c.7.1 1.4.2 2.2.2h-2c.8 0 1.5-.1 2.2-.2l5 5c.8.8 2 .8 2.8 0l3.5-3.5c.8-.8.8-2 0-2.8l-5-5c2-2 3.5-4.5 3.5-7.5 0-4-2.7-7-6-8.5V8c0-2.2-1.8-4-4-4z"/></svg>
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 43s-15-11-15-22a9 9 0 0 1 15-6.7A9 9 0 0 1 39 21c0 11-15 22-15 22z"/><path d="M24 10c-2 4-2 8 0 12"/><path d="M19 16c2 2 6 2 10 0"/><path d="M17 24c3-1 7-1 14 0"/></svg>
                 </div>
                 <h3>Balansera humöret</h3>
                 <p>Finn ett gladare och mer balanserat humör dagen ut med mer energi.</p>
             </div>
             <div class="benefit-card">
                 <div class="icon">
-                    <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16zm-2-26h3v12h-3zm8-2l2.5 2.5L28 19l-2.5-2.5z"/></svg>
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M38 24a14 14 0 1 1-14-14" fill="none"/><path d="M24 10A14 14 0 0 0 24 38a14 14 0 0 0 12.1-7" fill="currentColor" opacity="0.15"/><path d="M30 8l1.5 3.5 3.5 1-3 2 .5 3.5L30 16l-2.5 2 .5-3.5-3-2 3.5-1z"/><path d="M38 14l1 2 2.5.5-2 1.5.5 2.5-2-1.5-2 1.5.5-2.5-2-1.5 2.5-.5z"/></svg>
                 </div>
                 <h3>Återställ dygnsrytmen</h3>
                 <p>Få tillbaka din normala dygnsrytm och få den kvalitésömn du behöver.</p>
             </div>
             <div class="benefit-card">
                 <div class="icon">
-                    <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 6c-1.1 0-2 .9-2 2v4h4V8c0-1.1-.9-2-2-2zm0 10c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm-8 10c0-4.4 3.6-8 8-8v8h8c0 4.4-3.6 8-8 8s-8-3.6-8-8z"/></svg>
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M24 12v6l-4 8h12l-4-8V12" fill="currentColor" opacity="0.15"/><path d="M28 26l-2 10-4-6h-4l6-10"/><path d="M14 10l2 2M34 10l-2 2M14 38l2-2M34 38l-2-2M8 24h3M37 24h3"/></svg>
                 </div>
                 <h3>Bli mer produktiv</h3>
                 <p>Känn dig mer fokuserad på din arbetsplats och prestera bättre.</p>
@@ -59,7 +59,7 @@ $featured = array_filter($services, fn($s) => $s['featured'] ?? false);
             <p>Här hittar du allt från Klassisk massage till spa-behandlingar. Om du har några frågor angående en behandling, tveka inte att kontakta mig.</p>
         </div>
         <div class="treatments-grid">
-            <?php foreach (array_slice($featured, 0, 6) as $service): ?>
+            <?php foreach ($preview as $service): ?>
                 <a href="/behandlingar.php#<?= e($service['id']) ?>" class="treatment-card" style="background-image: url('/assets/images/<?= e($service['image']) ?>')">
                     <div class="treatment-card-content">
                         <h3><?= e($service['title']) ?></h3>
