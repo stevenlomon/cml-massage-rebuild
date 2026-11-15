@@ -118,9 +118,9 @@ $stars = str_repeat($star_svg, 5);
         <h2><strong>Friskvårds samarbeten</strong></h2>
         <p>Du kan enkelt boka din massage genom Epassi, Benify eller Wellnet och också då betala med ditt friskvårds bidrag.</p>
         <div class="partner-logos">
-            <img src="/assets/images/epassi.svg" alt="Epassi" width="120" height="60" loading="lazy">
-            <img src="/assets/images/benify.svg" alt="Benify – Godkänd partner" width="80" height="80" loading="lazy">
-            <img src="/assets/images/wellnet.svg" alt="Wellnet" width="120" height="60" loading="lazy">
+            <img src="/assets/images/epassi.svg" alt="Epassi" width="160" height="70" loading="lazy">
+            <img src="/assets/images/benify.svg" alt="Benify – Godkänd partner" width="110" height="110" loading="lazy">
+            <img src="/assets/images/wellnet.svg" alt="Wellnet" width="160" height="70" loading="lazy">
         </div>
     </div>
 </section>

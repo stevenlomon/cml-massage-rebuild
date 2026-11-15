@@ -570,17 +570,18 @@ h3 {
 /* ===== Partners / Friskvård Logos ===== */
 .partners {
     text-align: center;
-    padding: 4rem 0;
+    padding: clamp(4rem, 8vw, 6rem) 0;
 }
 
 .partners h2 {
-    margin-bottom: 0.75rem;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    margin-bottom: 1rem;
 }
 
 .partners > p {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 0.95rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
     opacity: 0.85;
 }
 
@@ -588,14 +589,23 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: clamp(2.5rem, 5vw, 4rem);
     flex-wrap: wrap;
 }
 
 .partner-logos img {
-    height: 60px;
+    height: auto;
     width: auto;
     object-fit: contain;
+}
+
+.partner-logos img:first-child,
+.partner-logos img:last-child {
+    height: clamp(50px, 6vw, 70px);
+}
+
+.partner-logos img:nth-child(2) {
+    height: clamp(80px, 9vw, 110px);
 }
 
 /* ===== Steps Cards (How to Book) ===== */
