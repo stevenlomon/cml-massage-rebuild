@@ -567,6 +567,11 @@ h3 {
     gap: clamp(2.5rem, 5vw, 3.5rem);
 }
 
+.cta-booking {
+    padding-top: clamp(5rem, 10.8vw, 7rem);
+    padding-bottom: clamp(5rem, 10.8vw, 7rem);
+}
+
 /* ===== Partners / Friskvård Logos ===== */
 .partners {
     text-align: center;
