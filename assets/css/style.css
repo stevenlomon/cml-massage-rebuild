@@ -401,7 +401,7 @@ h3 {
 
 /* ===== Treatment Cards ===== */
 .treatments {
-    padding: clamp(5rem, 10.8vw, 7rem) clamp(1rem, 1.5vw, 2.5rem);
+    padding: clamp(5rem, 10.8vw, 7rem) clamp(1rem, 1.5vw, 2.5rem) clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .treatments-grid {
@@ -483,65 +483,88 @@ h3 {
     opacity: 0.85;
 }
 
-/* ===== Split Banners (IR Bastu, About Nancy, Presentkort, CTA) ===== */
+/* ===== Split Banners (IR Bastu, Presentkort, About Nancy, CTA) ===== */
 .split-banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: var(--shadow-card);
-}
-
-.split-banner-content {
     background-color: var(--color-primary);
-    color: var(--color-text-light);
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow:
+        0px 2.4px 5.3px 0px rgba(0, 0, 0, 0.05),
+        0px 8px 17.9px 0px rgba(0, 0, 0, 0.07),
+        0px 36px 80px 0px rgba(0, 0, 0, 0.12);
 }
 
-.split-banner-content h2 {
-    color: var(--color-text-light);
-    margin-bottom: 1.25rem;
+.split-banner--reversed {
+    direction: rtl;
 }
 
-.split-banner-content p {
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
+.split-banner--reversed > * {
+    direction: ltr;
+}
+
+.split-banner-image {
+    overflow: hidden;
 }
 
 .split-banner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.split-banner-content {
+    color: var(--color-text-light);
+    padding: clamp(2rem, 3.5vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.split-banner-content h2 {
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: clamp(1.5rem, 2.5vw, 1.78rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.split-banner-content p {
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    line-height: 1.6;
+    opacity: 0.92;
 }
 
 .split-banner .check-list {
-    margin-bottom: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
 }
 
 .split-banner .check-list li {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
 }
 
-.split-banner .check-list li::before {
-    content: '✓';
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.split-banner .check-list li svg {
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    background-color: var(--color-accent);
-    color: var(--color-text-light);
-    font-size: 0.8rem;
-    font-weight: 700;
     flex-shrink: 0;
+    fill: var(--color-accent);
+}
+
+.promo-cards {
+    padding: 0 clamp(1rem, 1.5vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 /* ===== Partners / Friskvård Logos ===== */
@@ -1062,6 +1085,10 @@ h3 {
     .split-banner,
     .cta-card {
         grid-template-columns: 1fr;
+    }
+
+    .split-banner--reversed {
+        direction: ltr;
     }
 
     .split-banner-image {

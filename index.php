@@ -68,25 +68,48 @@ $stars = str_repeat($star_svg, 5);
     </div>
 </section>
 
-<!-- IR Bastu Banner -->
-<section style="padding: 4rem 0;">
-    <div class="container">
-        <div class="split-banner">
-            <div class="split-banner-image">
-                <img src="/assets/images/ir-bastu.jpg" alt="IR Bastu på CML Massage & Wellness" width="600" height="400" loading="lazy">
-            </div>
-            <div class="split-banner-content">
-                <h2>Välj gärna till IR Bastu till din massage!</h2>
-                <p>Du kan numera välja till IR bastu till din favorit behandling! IR bastu har många fördelar och hjälper mig komma in djupare under massagens gång då det mjuknar upp kroppen.</p>
-                <ul class="check-list">
-                    <li>Hjälper sänka blodtrycket</li>
-                    <li>Mjukar upp spända muskler</li>
-                    <li>Ökar kroppens förbränning</li>
-                </ul>
-                <div><a href="/behandlingar.php#ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
-            </div>
+<!-- Promo Banner Cards -->
+<section class="promo-cards container">
+
+    <!-- IR Bastu -->
+    <div class="split-banner">
+        <div class="split-banner-image">
+            <img src="/assets/images/ir-bastu.jpg" alt="IR Bastu på CML Massage &amp; Wellness" width="600" height="453" loading="lazy">
+        </div>
+        <div class="split-banner-content">
+            <h2>Välj gärna till IR Bastu till din massage!</h2>
+            <p>Du kan numera välja till IR bastu till din favorit behandling! IR bastu har många fördelar och hjälper mig komma in djupare under massagens gång då det mjuknar upp kroppen.</p>
+            <ul class="check-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                    Hjälper sänka blodtrycket
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                    Mjukar upp spända muskler
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                    Ökar kroppens förbränning
+                </li>
+            </ul>
+            <div><a href="/behandlingar.php#ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
         </div>
     </div>
+
+    <!-- Presentkort & Massagekort -->
+    <div class="split-banner split-banner--reversed">
+        <div class="split-banner-image">
+            <img src="/assets/images/presentkort.png" alt="Presentkort och massagekort" width="1024" height="683" loading="lazy">
+        </div>
+        <div class="split-banner-content">
+            <h2>Presentkort och massagekort</h2>
+            <p>Upptäck den perfekta gåvan för välbefinnande med flexibla Presentkort. Presentkorten ger dig friheten att välja beloppet själv, funkar utmärkt som gåva för nära och kära.</p>
+            <p>CML Massage &amp; Wellness erbjuder också massagekort med enkel och smidig checkout online där du kan betala med kort eller Klarna.</p>
+            <div><a href="/presentkort-och-massagekort.php" class="btn btn-primary">Läs mer</a></div>
+        </div>
+    </div>
+
 </section>
 
 <!-- Friskvård Partners -->
