@@ -70,7 +70,7 @@ $page_description = $page_description ?? e($salon['meta']['description']);
     }
     </script>
 </head>
-<body>
+<body<?= $page === 'index' ? ' class="has-hero"' : '' ?>>
     <a href="#main" class="skip-link">Hoppa till innehåll</a>
 
     <header class="site-header">

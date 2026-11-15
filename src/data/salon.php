@@ -38,7 +38,7 @@ return [
 
     'rating' => [
         'value' => 4.9,
-        'count' => 1787, // TODO: Find a way to automatically update this on a continual basis
+        'count' => 1828,
     ],
 
     'social' => [
