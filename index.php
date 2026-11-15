@@ -3,7 +3,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/src/templates/header.php';
 $salon = get_salon_data();
 $services = get_services();
-$preview = array_slice($services, 0, 6);
+$preview = array_filter($services, fn($s) => $s['id'] !== 'ir-bastu-och-massage');
 $star_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.173 6.765C-0.156 6.451 0.015 5.877 0.456 5.815L5.354 5.119L7.538 0.792C7.735 0.402 8.268 0.402 8.465 0.792L10.649 5.119L15.547 5.815C15.988 5.877 16.159 6.451 15.829 6.765L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" fill="var(--color-star)"/></svg>';
 $stars = str_repeat($star_svg, 5);
 ?>
@@ -47,7 +47,7 @@ $stars = str_repeat($star_svg, 5);
 </section>
 
 <!-- Treatment Preview -->
-<section class="bg-light" style="padding: 4rem 0;">
+<section class="treatments">
     <div class="container">
         <div class="section-label">Vilken behandling längtar du efter?</div>
         <div class="section-header">

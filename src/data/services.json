@@ -70,7 +70,7 @@
   {
     "id": "koppning",
     "title": "Koppning",
-    "description": "Traditionell koppningsteknik som främjar blodcirkulation och smärtlindring.",
+    "description": "Vakuum skapas med koppar för att bl.a. förbättra blodcirkulationen.",
     "long_description": "Koppning är en traditionell behandlingsmetod som använder sugkoppar för att skapa undertryck på huden, vilket främjar blodcirkulationen och lindrar muskelspänningar.",
     "benefits": [
       "Förbättrad blodcirkulation",
@@ -87,7 +87,7 @@
   {
     "id": "taktil-massage",
     "title": "Taktil Massage",
-    "description": "En mjuk och omslutande massage som stimulerar kroppens lugn-och-ro-system.",
+    "description": "Lätta, rytmiska beröringar används för att främja avslappning och välbefinnande.",
     "long_description": "Taktil massage är en mjuk och omslutande massageteknik som fokuserar på att stimulera kroppens lugnande nervsystem genom varsamma, medvetna beröringar.",
     "benefits": [
       "Djup avslappning",
@@ -104,7 +104,7 @@
   {
     "id": "hot-stone-massage",
     "title": "Hot Stone Massage",
-    "description": "Varma stenar kombinerat med massage för djup muskelavslappning.",
+    "description": "Värme från släta stenar används för att lindra muskelspänning och stress.",
     "long_description": "Hot Stone Massage använder uppvärmda basaltstenar som placeras på specifika punkter på kroppen, kombinerat med massagetekniker för djupgående muskelavslappning.",
     "benefits": [
       "Djup muskelavslappning",
@@ -121,7 +121,7 @@
   {
     "id": "body-clay-wrapping-relax",
     "title": "Body Clay Wrapping Relax",
-    "description": "En 3h helkroppsbehandling med bl.a. alginpackning för en komplett detox.",
+    "description": "Lerinpackning och ansiktsmassage för att avgifta huden och ge djup avslappning.",
     "long_description": "Body Clay Wrapping Relax är en lyxig helkroppsbehandling som kombinerar lera, alginpackning och massage för en komplett detox- och avslappningsupplevelse.",
     "benefits": [
       "Avgiftning och hudförnyelse",
@@ -154,7 +154,7 @@
   {
     "id": "top-to-toe-deluxe-detox",
     "title": "Top to Toe Deluxe Detox",
-    "description": "En 3h helkroppsbehandling med bl.a. alginpackning för en komplett detox.",
+    "description": "En 3h helkroppsbehandling  med bl.a. alginpackning för en komplett detox",
     "long_description": "Top to Toe Deluxe Detox är en omfattande helkroppsbehandling som kombinerar flera tekniker för en total förnyelse- och avslappningsupplevelse.",
     "benefits": [
       "Helkroppsavgiftning",
