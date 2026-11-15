@@ -1384,6 +1384,25 @@ h3 {
     margin: 0;
 }
 
+.presentkort-validity {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    opacity: 1;
+}
+
+.payment-badges {
+    margin-top: 0.5rem;
+    height: 26px;
+    width: auto;
+}
+
+.presentkort-cta {
+    padding-top: clamp(5rem, 10.8vw, 7rem);
+    padding-bottom: clamp(5rem, 10.8vw, 7rem);
+}
+
 .about-cta {
     padding-top: clamp(2rem, 4vw, 3rem);
     padding-bottom: clamp(5rem, 10.8vw, 7rem);

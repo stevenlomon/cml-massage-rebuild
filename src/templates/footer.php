@@ -12,6 +12,7 @@ $services = get_services();
                     <h3>Företag</h3>
                     <ul>
                         <li><a href="/om-foretaget.php">Om Företaget</a></li>
+                        <li><a href="/presentkort-och-massagekort.php">Presentkort</a></li>
                         <li><a href="/#kontakt">Kontakt</a></li>
                     </ul>
                     <address>
