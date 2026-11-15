@@ -53,6 +53,7 @@ $services = get_services();
                 </div>
 
                 <div class="footer-meta">
+                    <p>Made with ❤️ by <a href="https://github.com/stevenlomon" target="_blank" rel="noopener">Steven Lomon</a></p>
                     <p>&copy; <?= date('Y') ?> <?= e($salon['name']) ?></p>
                     <div class="social-links">
                         <a href="<?= e($salon['social']['facebook']) ?>" target="_blank" rel="noopener" aria-label="Facebook">
