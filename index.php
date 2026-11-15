@@ -4,6 +4,8 @@ require_once __DIR__ . '/src/templates/header.php';
 $salon = get_salon_data();
 $services = get_services();
 $preview = array_slice($services, 0, 6);
+$star_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.173 6.765C-0.156 6.451 0.015 5.877 0.456 5.815L5.354 5.119L7.538 0.792C7.735 0.402 8.268 0.402 8.465 0.792L10.649 5.119L15.547 5.815C15.988 5.877 16.159 6.451 15.829 6.765L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" fill="var(--color-star)"/></svg>';
+$stars = str_repeat($star_svg, 5);
 ?>
 
 <!-- Hero -->
@@ -14,7 +16,7 @@ $preview = array_slice($services, 0, 6);
         <div class="hero-actions">
             <a href="/behandlingar.php" class="btn btn-primary">Se Behandlingar</a>
             <div class="hero-rating">
-                <span class="stars">★★★★★</span>
+                <div class="stars"><?= $stars ?></div>
                 <span><strong><?= $salon['rating']['value'] ?> Fantastisk Bra</strong> (<?= $salon['rating']['count'] ?> betyg)</span>
             </div>
         </div>
@@ -155,33 +157,33 @@ $preview = array_slice($services, 0, 6);
         <div class="section-label">Vad säger kunderna?</div>
         <h2>CML Massage &amp; Wellness är älskat av hundratals personer i Katrineholm</h2>
         <div class="hero-rating" style="margin: 1rem 0 2rem; color: var(--color-text);">
-            <span class="stars">★★★★★</span>
+            <div class="stars"><?= $stars ?></div>
             <span><strong><?= $salon['rating']['value'] ?> Fantastisk Bra</strong> (<?= $salon['rating']['count'] ?> betyg)</span>
         </div>
         <div class="reviews-scroll">
             <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars"><?= $stars ?></div>
                 <p class="review-title">Musklerna fick sig en skön och noggrann genomgång. Nancy är en mycket duktig massör!</p>
                 <p class="review-text">Besöket hos Nancy gjorde mig så avslappnad och lugn. Musklerna fick sig en skön och noggrann genomgång. Nancy är en mycket duktig massör.</p>
                 <p class="reviewer">Eleonor F.</p>
                 <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
             </div>
             <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars"><?= $stars ?></div>
                 <p class="review-title">Min personliga favorit är Koppningen!</p>
                 <p class="review-text">Jag har testat Aroma Thaimassage, Djupvävsmassage och Koppning. Alla 3 var riktigt bra men min personliga favorit är Koppningen. Nancy är väldigt professionell i sitt jobb. Rekommenderas!</p>
                 <p class="reviewer">Sara S.</p>
                 <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
             </div>
             <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars"><?= $stars ?></div>
                 <p class="review-title">Är själv certifierad massör och kräsen men det här är världsklass på flera nivåer!</p>
                 <p class="review-text">Som alltid den bästa massagen ever … Så avslappnad, ompysslad och full av energi efteråt. Jag är själv certifierad massör och kräsen men det här är världsklass på flera nivåer med små detaljer som ger extra guldkant och gör att du som kund känner dig trygg hela vägen.</p>
                 <p class="reviewer">Anki S.</p>
                 <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
             </div>
             <div class="review-card">
-                <div class="stars">★★★★★</div>
+                <div class="stars"><?= $stars ?></div>
                 <p class="review-title">Bland den bästa massagen jag gått på!</p>
                 <p class="review-text">Jag fick en djupvävsmassage och det var otroligt bra! Bland den bästa massagen jag gått på. Rekommenderar verkligen!</p>
                 <p class="reviewer">Sara K.</p>

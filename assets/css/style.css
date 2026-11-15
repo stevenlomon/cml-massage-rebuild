@@ -9,7 +9,7 @@
     --color-bg-card: #ffffff;
     --color-text: #113f53;
     --color-text-light: #fbfbff;
-    --color-star: #ffd64f;
+    --color-star: #ffc812;
     --color-check: #10bbd3;
 
     --font-body: 'Source Sans 3', sans-serif;
@@ -348,9 +348,6 @@ h3 {
 .hero-rating .stars {
     display: flex;
     gap: 0.25rem;
-    color: var(--color-star);
-    font-size: 1rem;
-    letter-spacing: 2px;
 }
 
 .hero-rating strong {
@@ -649,9 +646,8 @@ h3 {
 }
 
 .review-card .stars {
-    color: var(--color-star);
-    font-size: 1rem;
-    letter-spacing: 2px;
+    display: flex;
+    gap: 0.2rem;
     margin-bottom: 0.75rem;
 }
 
