@@ -608,6 +608,55 @@ h3 {
     height: clamp(120px, 12vw, 150px);
 }
 
+/* ===== About Nancy ===== */
+.about-nancy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-primary);
+    padding: 0;
+    height: clamp(300px, 28vw, 450px);
+    overflow: hidden;
+}
+
+.about-nancy-image {
+    overflow: hidden;
+}
+
+.about-nancy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-nancy-content {
+    color: var(--color-text-light);
+    padding: clamp(2rem, 3.5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.about-nancy-content h2 {
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-nancy-content p {
+    font-size: clamp(1rem, 1.4vw, 1.1rem);
+    line-height: 1.5;
+    opacity: 0.92;
+}
+
+.about-nancy-content .btn {
+    align-self: flex-start;
+}
+
 /* ===== Steps Cards (How to Book) ===== */
 .steps {
     text-align: center;
@@ -1104,6 +1153,14 @@ h3 {
     .split-banner-image {
         max-height: 300px;
         overflow: hidden;
+    }
+
+    .about-nancy {
+        grid-template-columns: 1fr;
+    }
+
+    .about-nancy-image {
+        max-height: 300px;
     }
 
     .benefits-grid {

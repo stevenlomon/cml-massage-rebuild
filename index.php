@@ -126,20 +126,16 @@ $stars = str_repeat($star_svg, 5);
 </section>
 
 <!-- About Nancy -->
-<section style="padding: 4rem 0;">
-    <div class="container">
-        <div class="split-banner">
-            <div class="split-banner-image">
-                <img src="/assets/images/nancy-lennartsson.jpg" alt="<?= e($salon['owner']) ?> framför CML Massage & Wellness" width="600" height="500" loading="lazy">
-            </div>
-            <div class="split-banner-content">
-                <h2>Din friskvårdsmassör i Katrineholm</h2>
-                <p>Jag förstår hur det känns när ens kropp är överbelastad av stress och allt känns tungt, då vill man bara koppla av.</p>
-                <p>Jag jobbar ständigt för att mina kunder ska kunna känna sig som hemma och få en toppenupplevelse.</p>
-                <p>Här kan ni slappna av, lämna all stress, huvudvärk och fysisk oro som manifesteras i kroppen som bara tynger ner en.</p>
-                <a href="/kontakt.php" class="btn btn-primary">Läs mer</a>
-            </div>
-        </div>
+<section class="about-nancy">
+    <div class="about-nancy-image">
+        <img src="/assets/images/nancy-lennartsson.png" alt="<?= e($salon['owner']) ?> framför CML Massage &amp; Wellness" width="1024" height="749" loading="lazy">
+    </div>
+    <div class="about-nancy-content">
+        <h2>Din friskvårdsmassör i Katrineholm</h2>
+        <p>Jag förstår hur det känns när ens kropp är överbelastad av stress och allt känns tungt, då vill man bara koppla av.</p>
+        <p>Jag jobbar ständigt för att mina kunder ska kunna känna sig som hemma och få en toppenupplevelse.</p>
+        <p>Här kan ni slappna av, lämna all stress, huvudvärk och fysisk oro som manifesteras i kroppen som bara tynger ner en.</p>
+        <a href="/om-foretaget.php" class="btn btn-primary">Läs mer</a>
     </div>
 </section>
 
