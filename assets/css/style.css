@@ -1047,6 +1047,7 @@ h3 {
 /* ===== Map ===== */
 .map {
     padding: 0 0 4rem;
+    background-color: var(--color-bg-light);
 }
 
 .map h2 {
