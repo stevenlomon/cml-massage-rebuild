@@ -165,43 +165,42 @@ $stars = str_repeat($star_svg, 5);
 </section>
 
 <!-- Reviews -->
+<?php $reviews = get_reviews(); ?>
 <section class="reviews">
-    <div class="container">
+    <div class="reviews-header">
         <div class="section-label">Vad säger kunderna?</div>
-        <h2>CML Massage &amp; Wellness är älskat av hundratals personer i Katrineholm</h2>
-        <div class="hero-rating" style="margin: 1rem 0 2rem; color: var(--color-text);">
+        <h2 class="reviews-heading">CML Massage &amp; Wellness är älskat av hundratals personer i Katrineholm</h2>
+        <div class="reviews-rating">
             <div class="stars"><?= $stars ?></div>
             <span><strong><?= $salon['rating']['value'] ?> Fantastisk Bra</strong> (<?= $salon['rating']['count'] ?> betyg)</span>
         </div>
-        <div class="reviews-scroll">
+    </div>
+    <div class="reviews-carousel" data-total="<?= count($reviews) ?>">
+        <div class="reviews-track">
+            <?php foreach ($reviews as $review): ?>
             <div class="review-card">
                 <div class="stars"><?= $stars ?></div>
-                <p class="review-title">Musklerna fick sig en skön och noggrann genomgång. Nancy är en mycket duktig massör!</p>
-                <p class="review-text">Besöket hos Nancy gjorde mig så avslappnad och lugn. Musklerna fick sig en skön och noggrann genomgång. Nancy är en mycket duktig massör.</p>
-                <p class="reviewer">Eleonor F.</p>
-                <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
+                <p class="review-title"><?= e($review['heading']) ?></p>
+                <p class="review-text"><?= e($review['quote']) ?></p>
+                <div class="review-footer">
+                    <p class="reviewer"><?= e($review['name']) ?></p>
+                    <p class="reviewer-label"><?= e($review['status']) ?></p>
+                </div>
             </div>
-            <div class="review-card">
-                <div class="stars"><?= $stars ?></div>
-                <p class="review-title">Min personliga favorit är Koppningen!</p>
-                <p class="review-text">Jag har testat Aroma Thaimassage, Djupvävsmassage och Koppning. Alla 3 var riktigt bra men min personliga favorit är Koppningen. Nancy är väldigt professionell i sitt jobb. Rekommenderas!</p>
-                <p class="reviewer">Sara S.</p>
-                <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
-            </div>
-            <div class="review-card">
-                <div class="stars"><?= $stars ?></div>
-                <p class="review-title">Är själv certifierad massör och kräsen men det här är världsklass på flera nivåer!</p>
-                <p class="review-text">Som alltid den bästa massagen ever … Så avslappnad, ompysslad och full av energi efteråt. Jag är själv certifierad massör och kräsen men det här är världsklass på flera nivåer med små detaljer som ger extra guldkant och gör att du som kund känner dig trygg hela vägen.</p>
-                <p class="reviewer">Anki S.</p>
-                <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
-            </div>
-            <div class="review-card">
-                <div class="stars"><?= $stars ?></div>
-                <p class="review-title">Bland den bästa massagen jag gått på!</p>
-                <p class="review-text">Jag fick en djupvävsmassage och det var otroligt bra! Bland den bästa massagen jag gått på. Rekommenderar verkligen!</p>
-                <p class="reviewer">Sara K.</p>
-                <p class="reviewer-label">CML Massage &amp; Wellness Kund</p>
-            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <div class="reviews-controls">
+        <div class="reviews-progress">
+            <div class="reviews-progress-bar"></div>
+        </div>
+        <div class="reviews-nav">
+            <button class="reviews-nav-btn reviews-prev" aria-label="Föregående recension">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="reviews-nav-btn reviews-next" aria-label="Nästa recension">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
         </div>
     </div>
 </section>

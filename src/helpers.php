@@ -23,6 +23,15 @@ function get_services(): array {
     return $services;
 }
 
+function get_reviews(): array {
+    static $reviews = null;
+    if ($reviews === null) {
+        $json = file_get_contents(__DIR__ . '/data/reviews.json');
+        $reviews = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+    }
+    return $reviews;
+}
+
 function get_booking_url(?string $service_id = null): string {
     $salon = get_salon_data();
     $base = $salon['bokadirekt_url'];
