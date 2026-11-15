@@ -71,4 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         update();
     }
+
+    const textarea = document.querySelector('.contact-form textarea');
+    if (textarea) {
+        const charEl = document.querySelector('.char-count');
+        const wordEl = document.querySelector('.word-count');
+        textarea.addEventListener('input', () => {
+            const val = textarea.value;
+            charEl.textContent = val.length;
+            wordEl.textContent = val.trim() === '' ? 0 : val.trim().split(/\s+/).length;
+        });
+    }
 });

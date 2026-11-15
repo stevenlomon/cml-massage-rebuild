@@ -209,18 +209,34 @@ $stars = str_repeat($star_svg, 5);
 <?php require __DIR__ . '/src/templates/cta-booking.php'; ?>
 
 <!-- Contact -->
-<section class="bg-light" style="padding: 4rem 0;" id="kontakt">
+<section class="bg-light contact-section" id="kontakt">
     <div class="container">
         <div class="section-label">Funderar du över något?</div>
         <div class="contact-grid">
-            <div>
-                <p style="margin-bottom: 1.5rem;">Har du frågor om behandlingar, bokning eller friskvård? Kontakta mig direkt via telefon eller e-post.</p>
-                <a href="mailto:<?= e($salon['email']) ?>?subject=Fråga%20från%20hemsidan" class="btn btn-primary">Skicka e-post</a>
-                <a href="tel:<?= e($salon['phone']) ?>" class="btn btn-primary" style="margin-left: 0.5rem;">Ring mig</a>
+            <div class="contact-form-wrap">
+                <?php if (isset($_GET['msg'])): ?>
+                    <div class="form-alert form-alert--<?= $_GET['msg'] === 'ok' ? 'success' : 'error' ?>">
+                        <?= $_GET['msg'] === 'ok'
+                            ? 'Tack för ditt meddelande! Jag återkommer så snart jag kan.'
+                            : e($_GET['error'] ?? 'Något gick fel. Försök igen.') ?>
+                    </div>
+                <?php endif; ?>
+                <form action="/src/handle-contact.php" method="post" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <input type="text" name="first_name" placeholder="Ditt Förnamn" required>
+                        <input type="text" name="last_name" placeholder="Ditt Efternamn" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Din E-post" required>
+                    <input type="tel" name="phone" placeholder="Ditt Telefonnummer">
+                    <textarea name="message" placeholder="Ditt Meddelande" rows="6" required></textarea>
+                    <div class="form-counter"><span class="char-count">0</span> karaktärer / <span class="word-count">0</span> ord</div>
+                    <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off">
+                    <button type="submit" class="btn btn-submit">Skicka</button>
+                </form>
             </div>
             <div class="contact-info">
                 <h2>Kontakta mig</h2>
-                <p>Om det är brådskande kan jag nås på numret under. Svarar jag inte är jag förmodligen med en kund men ringer tillbaka till dig så snabbt jag kan!</p>
+                <p>Använd gärna kontakt formuläret vid frågor. Om det är brådskande kan jag nås på numret under. Svarar jag inte är jag förmodligen med en kund men ringer tillbaka till dig så snabbt jag kan!</p>
                 <p>Hälsningar,<br><?= e($salon['owner']) ?></p>
                 <div class="contact-detail">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.91 15.91 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.21.49 2.53.76 3.89.76a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.36.27 2.68.76 3.89a1 1 0 0 1-.27 1.11l-2.37 2.79z"/></svg>
