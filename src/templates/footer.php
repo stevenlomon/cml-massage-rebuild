@@ -11,6 +11,7 @@ $services = get_services();
                 <div class="footer-col">
                     <h3>Företag</h3>
                     <ul>
+                        <li><a href="/om-foretaget.php">Om Företaget</a></li>
                         <li><a href="/#kontakt">Kontakt</a></li>
                     </ul>
                     <address>

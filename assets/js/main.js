@@ -72,6 +72,52 @@ document.addEventListener('DOMContentLoaded', () => {
         update();
     }
 
+    const qualsCarousel = document.querySelector('.quals-carousel');
+    if (qualsCarousel) {
+        const qTrack = qualsCarousel.querySelector('.quals-track');
+        const qCards = qTrack.querySelectorAll('.qual-card');
+        const qPrev = document.querySelector('.quals-prev');
+        const qNext = document.querySelector('.quals-next');
+        const qBar = document.querySelector('.quals-progress-bar');
+        const qTotal = qCards.length;
+        let qIndex = 0;
+
+        function getQVisible() {
+            const w = qCards[0].offsetWidth;
+            const gap = 28.8;
+            return Math.floor((window.innerWidth - qTrack.offsetLeft) / (w + gap)) || 1;
+        }
+
+        function getQMax() {
+            return Math.max(0, qTotal - getQVisible());
+        }
+
+        function updateQ() {
+            const gap = 28.8;
+            const offset = qIndex * (qCards[0].offsetWidth + gap);
+            qTrack.style.transform = `translateX(-${offset}px)`;
+            const maxIdx = getQMax();
+            const progress = maxIdx > 0 ? ((qIndex + 1) / (maxIdx + 1)) * 100 : 100;
+            qBar.style.width = `${progress}%`;
+            qPrev.disabled = qIndex <= 0;
+            qNext.disabled = qIndex >= maxIdx;
+        }
+
+        qPrev.addEventListener('click', () => { if (qIndex > 0) { qIndex--; updateQ(); } });
+        qNext.addEventListener('click', () => { if (qIndex < getQMax()) { qIndex++; updateQ(); } });
+
+        let qResize;
+        window.addEventListener('resize', () => {
+            clearTimeout(qResize);
+            qResize = setTimeout(() => {
+                if (qIndex > getQMax()) qIndex = getQMax();
+                updateQ();
+            }, 100);
+        });
+
+        updateQ();
+    }
+
     const textarea = document.querySelector('.contact-form textarea');
     if (textarea) {
         const charEl = document.querySelector('.char-count');
