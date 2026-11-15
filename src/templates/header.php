@@ -85,11 +85,9 @@ $page_description = $page_description ?? e($salon['meta']['description']);
 
             <nav id="main-nav" class="main-nav" aria-label="Huvudmeny">
                 <ul>
-                    <li><a href="/"<?= is_active_page('index') ? ' aria-current="page"' : '' ?>>Hem</a></li>
-                    <li><a href="/behandlingar.php"<?= is_active_page('behandlingar') ? ' aria-current="page"' : '' ?>>Behandlingar</a></li>
-                    <li><a href="/friskvard.php"<?= is_active_page('friskvard') ? ' aria-current="page"' : '' ?>>Friskvård</a></li>
-                    <li><a href="/kontakt.php"<?= is_active_page('kontakt') ? ' aria-current="page"' : '' ?>>Kontakt</a></li>
-                    <li><a href="<?= e(get_booking_url()) ?>" class="btn btn-nav" target="_blank" rel="noopener">Boka Nu</a></li>
+                    <li><a href="/om-foretaget.php"<?= is_active_page('om-foretaget') ? ' aria-current="page"' : '' ?>>Om Företaget</a></li>
+                    <li><a href="/#kontakt">Kontakt</a></li>
+                    <li><a href="/#behandlingar" class="btn btn-nav">Behandlingar</a></li>
                 </ul>
             </nav>
         </div>

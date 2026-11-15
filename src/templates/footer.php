@@ -11,7 +11,7 @@ $services = get_services();
                 <div class="footer-col">
                     <h3>Företag</h3>
                     <ul>
-                        <li><a href="/kontakt.php">Kontakt</a></li>
+                        <li><a href="/#kontakt">Kontakt</a></li>
                     </ul>
                     <address>
                         <p><em><?= e($salon['legal_name']) ?></em></p>
@@ -25,7 +25,7 @@ $services = get_services();
                     <h3>Behandlingar</h3>
                     <ul class="footer-treatments">
                         <?php foreach ($services as $service): ?>
-                            <li><a href="/behandlingar.php#<?= e($service['id']) ?>"><?= e($service['title']) ?></a></li>
+                            <li><a href="/#<?= e($service['id']) ?>"><?= e($service['title']) ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

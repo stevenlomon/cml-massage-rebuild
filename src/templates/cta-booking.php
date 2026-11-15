@@ -2,7 +2,7 @@
 declare(strict_types=1);
 $cta_heading = $cta_heading ?? 'Hur kan du uppleva ett friskare du?';
 $cta_button_text = $cta_button_text ?? 'Se Behandlingar';
-$cta_button_url = $cta_button_url ?? '/behandlingar.php';
+$cta_button_url = $cta_button_url ?? '/#behandlingar';
 ?>
 <section class="promo-cards cta-booking">
     <div class="container">

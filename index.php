@@ -14,7 +14,7 @@ $stars = str_repeat($star_svg, 5);
         <h1>Massagebehandling i Katrineholm för ett friskare du</h1>
         <p>Många av oss bär på mycket underliggande stress och spänningar. På CML Massage &amp; Wellness får du avkopplingen du längtar efter i en hemtrevlig miljö, så du kan bli mer produktiv och energifylld dagen ut.</p>
         <div class="hero-actions">
-            <a href="/behandlingar.php" class="btn btn-primary">Se Behandlingar</a>
+            <a href="#behandlingar" class="btn btn-primary">Se Behandlingar</a>
             <div class="hero-rating">
                 <div class="stars"><?= $stars ?></div>
                 <span><strong><?= $salon['rating']['value'] ?> Fantastisk Bra</strong> (<?= $salon['rating']['count'] ?> betyg)</span>
@@ -47,7 +47,7 @@ $stars = str_repeat($star_svg, 5);
 </section>
 
 <!-- Treatment Preview -->
-<section class="treatments">
+<section class="treatments" id="behandlingar">
     <div class="container">
         <div class="section-label">Vilken behandling längtar du efter?</div>
         <div class="section-header">
@@ -56,7 +56,7 @@ $stars = str_repeat($star_svg, 5);
         </div>
         <div class="treatments-grid">
             <?php foreach ($preview as $service): ?>
-                <a href="/behandlingar.php#<?= e($service['id']) ?>" class="treatment-card" style="background-image: url('/assets/images/<?= e($service['image']) ?>')">
+                <a href="#<?= e($service['id']) ?>" class="treatment-card" style="background-image: url('/assets/images/<?= e($service['image']) ?>')">
                     <div class="treatment-card-content">
                         <h3><?= e($service['title']) ?></h3>
                         <p><?= e($service['description']) ?></p>
@@ -93,7 +93,7 @@ $stars = str_repeat($star_svg, 5);
                     Ökar kroppens förbränning
                 </li>
             </ul>
-            <div><a href="/behandlingar.php#ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
+            <div><a href="#ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
         </div>
     </div>
 
