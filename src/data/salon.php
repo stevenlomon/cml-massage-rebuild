@@ -10,15 +10,15 @@ return [
     'website'      => 'https://www.cmlmassagewellness.se',
 
     'address' => [
-        'street'  => 'Tallbacken 26',
+        'street'  => 'Torggatan 1B',
         'postal'  => '64151',
         'city'    => 'Katrineholm',
         'country' => 'SE',
     ],
 
     'geo' => [
-        'lat'  => 58.9957,
-        'lng'  => 16.2080,
+        'lat'  => 58.9908,
+        'lng'  => 16.1858,
     ],
 
     'bokadirekt_url' => 'https://www.bokadirekt.se/places/cml-massage-wellness-katrineholm-33316',
