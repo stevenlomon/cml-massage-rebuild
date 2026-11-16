@@ -811,7 +811,7 @@ h3 {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 .reviews-controls {
@@ -973,7 +973,7 @@ h3 {
 
 .form-counter {
     font-size: 0.85rem;
-    color: #888;
+    color: #767676;
     margin-top: -0.5rem;
 }
 
