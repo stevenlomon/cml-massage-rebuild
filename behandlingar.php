@@ -59,9 +59,10 @@ $check_svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widt
 
 <?php if (!empty($treatment['extra_sections'] ?? [])): ?>
     <?php foreach ($treatment['extra_sections'] as $i => $section): ?>
+    <?php $section_img = $section['image'] ?? $service['image']; ?>
     <section class="about-banner <?= $i % 2 === 0 ? '' : 'about-banner--reversed' ?>">
         <div class="about-banner-image">
-            <img src="/assets/images/<?= e($service['image']) ?>" alt="<?= e($section['heading']) ?>" width="957" height="640" loading="lazy">
+            <img src="/assets/images/<?= e($section_img) ?>" alt="<?= e($section['heading']) ?>" width="957" height="640" loading="lazy">
         </div>
         <div class="about-banner-content">
             <h2><?= e($section['heading']) ?></h2>
