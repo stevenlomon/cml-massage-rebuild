@@ -2,7 +2,9 @@
 :root {
     --color-primary: #113f53;
     --color-accent: #10bbd3;
+    --color-accent-btn: #0a7889;
     --color-accent-hover: #0ea8be;
+    --color-accent-btn-hover: #086a79;
     --color-label: #005c88;
     --color-bg: #fbfbff;
     --color-bg-light: #e8ecfc;
@@ -134,24 +136,24 @@ h3 {
 }
 
 .btn-primary {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     color: var(--color-text-light);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--color-accent-btn-hover);
     color: var(--color-text-light);
 }
 
 .btn-nav {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     color: var(--color-text-light);
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
 }
 
 .btn-nav:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--color-accent-btn-hover);
     color: var(--color-text-light);
 }
 
@@ -994,7 +996,7 @@ h3 {
 }
 
 .btn-submit:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     transform: translateY(-1px);
 }
 
