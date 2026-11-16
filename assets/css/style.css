@@ -2,7 +2,9 @@
 :root {
     --color-primary: #113f53;
     --color-accent: #10bbd3;
+    --color-accent-btn: #0a7889;
     --color-accent-hover: #0ea8be;
+    --color-accent-btn-hover: #086a79;
     --color-label: #005c88;
     --color-bg: #fbfbff;
     --color-bg-light: #e8ecfc;
@@ -49,9 +51,21 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 a {
     color: var(--color-accent);
-    text-decoration: none;
+    text-decoration: underline;
     transition: color var(--transition);
 }
 
@@ -124,6 +138,7 @@ h3 {
     font-weight: 600;
     font-size: 1rem;
     text-align: center;
+    text-decoration: none;
     transition: background-color var(--transition), transform var(--transition);
     cursor: pointer;
     border: none;
@@ -134,24 +149,24 @@ h3 {
 }
 
 .btn-primary {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     color: var(--color-text-light);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--color-accent-btn-hover);
     color: var(--color-text-light);
 }
 
 .btn-nav {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     color: var(--color-text-light);
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
 }
 
 .btn-nav:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--color-accent-btn-hover);
     color: var(--color-text-light);
 }
 
@@ -218,6 +233,10 @@ h3 {
     padding-bottom: 0.75rem;
 }
 
+.logo {
+    text-decoration: none;
+}
+
 .logo img {
     width: 50px;
     height: 50px;
@@ -234,6 +253,7 @@ h3 {
     color: var(--color-text);
     font-weight: 600;
     font-size: 0.95rem;
+    text-decoration: none;
     transition: color var(--transition);
 }
 
@@ -809,7 +829,7 @@ h3 {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 .reviews-controls {
@@ -955,7 +975,7 @@ h3 {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #999;
+    color: #767676;
 }
 
 .contact-form input:focus,
@@ -971,7 +991,7 @@ h3 {
 
 .form-counter {
     font-size: 0.85rem;
-    color: #888;
+    color: #6b6b6b;
     margin-top: -0.5rem;
 }
 
@@ -994,7 +1014,7 @@ h3 {
 }
 
 .btn-submit:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-btn);
     transform: translateY(-1px);
 }
 
@@ -1082,6 +1102,7 @@ h3 {
 .footer-col a {
     color: var(--color-text);
     font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .footer-col a:hover {
@@ -1130,8 +1151,12 @@ h3 {
 
 .footer-meta p {
     font-size: 0.875rem;
-    opacity: 0.7;
+    color: #6b6b6b;
     margin-bottom: 0.5rem;
+}
+
+.footer-meta a {
+    color: var(--color-accent-btn);
 }
 
 .social-links {
@@ -1141,6 +1166,7 @@ h3 {
 
 .social-links a {
     color: var(--color-text);
+    text-decoration: none;
     transition: color var(--transition);
 }
 
@@ -1558,7 +1584,7 @@ h3 {
     letter-spacing: 0.12em;
     font-weight: 600;
     color: var(--color-primary);
-    opacity: 0.65;
+    opacity: 0.75;
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
@@ -1593,7 +1619,7 @@ h3 {
 }
 
 .treatment-rating span {
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 .treatment-reviews-carousel {
