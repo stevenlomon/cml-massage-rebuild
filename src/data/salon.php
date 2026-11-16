@@ -24,13 +24,13 @@ return [
     'bokadirekt_url' => 'https://www.bokadirekt.se/places/cml-massage-wellness-katrineholm-33316',
 
     'opening_hours' => [
-        'Måndag'  => '13:30 - 21:00',
-        'Tisdag'  => '13:30 - 21:00',
-        'Onsdag'  => '13:30 - 21:00',
-        'Torsdag' => '13:30 - 21:00',
-        'Fredag'  => '13:30 - 21:00',
-        'Lördag'  => '13:30 - 21:00',
-        'Söndag'  => '13:30 - 21:00',
+        'Måndag'  => '09:00 - 21:00',
+        'Tisdag'  => '09:00 - 21:00',
+        'Onsdag'  => '09:00 - 21:00',
+        'Torsdag' => '09:00 - 21:00',
+        'Fredag'  => '09:00 - 21:00',
+        'Lördag'  => '13:00 - 21:00',
+        'Söndag'  => '13:00 - 21:00',
     ],
 
     // Schema.org openingHoursSpecification format
