@@ -1823,6 +1823,14 @@ h3 {
         overflow: hidden;
     }
 
+    .partner-logos img:nth-child(2) {
+        order: 2;
+    }
+
+    .partner-logos img:last-child {
+        order: 1;
+    }
+
     .about-nancy {
         grid-template-columns: 1fr;
         height: auto;
