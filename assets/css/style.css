@@ -1333,7 +1333,7 @@ h3 {
 
 .about-banner-content {
     color: var(--color-text-light);
-    padding: clamp(2rem, 3vw, 2.5rem) clamp(2rem, 3.5vw, 3rem);
+    padding: clamp(3rem, 5vw, 4.5rem) clamp(2rem, 3.5vw, 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
