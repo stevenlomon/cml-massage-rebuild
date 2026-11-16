@@ -39,6 +39,35 @@ function get_booking_url(?string $service_id = null): string {
     return $service_id ? "{$base}/{$service_id}{$utm}" : "{$base}{$utm}";
 }
 
+function get_service_by_slug(string $slug): ?array {
+    $services = get_services();
+    foreach ($services as $service) {
+        if ($service['id'] === $slug) {
+            return $service;
+        }
+    }
+    return null;
+}
+
+function get_treatment_data(): array {
+    static $data = null;
+    if ($data === null) {
+        $json = file_get_contents(__DIR__ . '/data/treatments.json');
+        $data = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+    }
+    return $data;
+}
+
+function get_treatment_by_slug(string $slug): ?array {
+    $treatments = get_treatment_data();
+    foreach ($treatments as $treatment) {
+        if ($treatment['id'] === $slug) {
+            return $treatment;
+        }
+    }
+    return null;
+}
+
 function get_current_page(): string {
     $script = basename($_SERVER['SCRIPT_NAME'] ?? '', '.php'); // `$_SERVER['SCRIPT_NAME']` gives the file name being executed, `basename` strips the file path and `.php`
     return $script === '' ? 'index' : $script;

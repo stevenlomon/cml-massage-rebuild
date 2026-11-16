@@ -56,7 +56,7 @@ $stars = str_repeat($star_svg, 5);
         </div>
         <div class="treatments-grid">
             <?php foreach ($preview as $service): ?>
-                <a href="#<?= e($service['id']) ?>" class="treatment-card" style="background-image: url('/assets/images/<?= e($service['image']) ?>')">
+                <a id="<?= e($service['id']) ?>" href="/behandlingar/<?= e($service['id']) ?>" class="treatment-card" style="background-image: url('/assets/images/<?= e($service['image']) ?>')">
                     <div class="treatment-card-content">
                         <h3><?= e($service['title']) ?></h3>
                         <p><?= e($service['description']) ?></p>
@@ -93,7 +93,7 @@ $stars = str_repeat($star_svg, 5);
                     Ökar kroppens förbränning
                 </li>
             </ul>
-            <div><a href="#ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
+            <div><a href="/behandlingar/ir-bastu-och-massage" class="btn btn-primary">Läs mer</a></div>
         </div>
     </div>
 

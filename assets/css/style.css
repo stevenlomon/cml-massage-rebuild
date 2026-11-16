@@ -1216,33 +1216,6 @@ h3 {
     line-height: 1.7;
 }
 
-/* ===== Treatment Benefits ===== */
-.treatment-benefits {
-    margin-bottom: 1.5rem;
-}
-
-.treatment-benefits li {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.treatment-benefits li::before {
-    content: '\2713';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--color-accent);
-    color: var(--color-text-light);
-    font-size: 0.8rem;
-    font-weight: 700;
-    flex-shrink: 0;
-}
 
 /* ===== Pricing Table ===== */
 .pricing-table {
@@ -1342,13 +1315,16 @@ h3 {
 }
 
 .about-banner-image {
+    position: relative;
     overflow: hidden;
     padding: 0;
     margin: 0;
-    height: 100%;
+    min-height: 320px;
 }
 
 .about-banner-image img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1406,6 +1382,260 @@ h3 {
 .about-cta {
     padding-top: clamp(2rem, 4vw, 3rem);
     padding-bottom: clamp(5rem, 10.8vw, 7rem);
+}
+
+/* ===== Treatment Detail Page ===== */
+.has-treatment .site-header {
+    position: static;
+}
+
+.treatment-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background: var(--color-bg);
+    padding: 0;
+}
+
+.treatment-hero-content {
+    padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 3.5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    max-width: 700px;
+    margin-left: auto;
+}
+
+.treatment-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    color: var(--color-label);
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.treatment-hero-content > p {
+    font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+    line-height: 1.6;
+    color: var(--color-primary);
+    opacity: 0.85;
+}
+
+.treatment-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.treatment-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+}
+
+.treatment-benefits li svg {
+    flex-shrink: 0;
+}
+
+.treatment-hero-image {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.treatment-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.treatment-booking {
+    background: var(--color-bg-light);
+    padding: clamp(4rem, 8vw, 6rem) 0;
+    text-align: center;
+}
+
+.treatment-booking h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3vw, 2.25rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.treatment-booking-intro {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.booking-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.booking-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 2.5vw, 2rem);
+    box-shadow:
+        0px 2.4px 5.3px 0px rgba(0, 0, 0, 0.05),
+        0px 8px 17.9px 0px rgba(0, 0, 0, 0.07),
+        0px 36px 80px 0px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0px 4px 8px 0px rgba(0, 0, 0, 0.08),
+        0px 12px 24px 0px rgba(0, 0, 0, 0.1),
+        0px 48px 100px 0px rgba(0, 0, 0, 0.14);
+}
+
+.booking-card h3 {
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.3;
+}
+
+.booking-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-card-price,
+.booking-card-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-primary);
+}
+
+.booking-card-price svg,
+.booking-card-duration svg {
+    color: var(--color-label);
+    flex-shrink: 0;
+}
+
+.booking-card-cta {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.treatment-reviews {
+    padding: clamp(5rem, 10.8vw, 7rem) 0;
+}
+
+.treatment-reviews .section-label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    color: var(--color-primary);
+    opacity: 0.65;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.treatment-reviews .section-label::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: var(--color-accent);
+}
+
+.treatment-reviews h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.treatment-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.treatment-rating strong {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+}
+
+.treatment-rating span {
+    opacity: 0.6;
+}
+
+.treatment-reviews-carousel {
+    position: relative;
+}
+
+.treatment-reviews-track {
+    display: flex;
+    gap: 1.8rem;
+    transition: transform 0.4s ease;
+    padding-left: max(clamp(1rem, 1.5vw, 2.5rem), calc((100vw - var(--max-width)) / 2 + clamp(1rem, 1.5vw, 2.5rem)));
+    padding-right: 1.8rem;
+}
+
+.treatment-reviews-controls {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 1.5vw, 2.5rem);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.treatment-reviews-progress {
+    flex: 1;
+    height: 4px;
+    background: #e8e8e8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.treatment-reviews-progress-bar {
+    height: 100%;
+    background: var(--color-label);
+    border-radius: 8px;
+    transition: width 0.4s ease;
+    width: 10%;
+}
+
+.treatment-reviews-nav {
+    display: flex;
+    gap: 0.75rem;
 }
 
 /* ===== Qualifications Carousel ===== */
@@ -1602,7 +1832,9 @@ h3 {
     }
 
     .about-banner-image {
-        max-height: 300px;
+        min-height: 260px;
+        max-height: 320px;
+        height: 300px;
     }
 
     .about-banner--reversed .about-banner-content {
@@ -1676,6 +1908,28 @@ h3 {
     }
 
     .quals-track {
+        padding-left: 1.25rem;
+    }
+
+    .treatment-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-hero-content {
+        margin-left: 0;
+        padding: clamp(2rem, 4vw, 3rem) 1.25rem;
+    }
+
+    .treatment-hero-image {
+        height: 300px;
+        order: -1;
+    }
+
+    .booking-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-reviews-track {
         padding-left: 1.25rem;
     }
 }

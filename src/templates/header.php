@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../helpers.php';
 $salon = get_salon_data();
-$page = get_current_page();
+$page = $page ?? get_current_page();
 $page_title = $page_title ?? e($salon['meta']['title']);
 $page_description = $page_description ?? e($salon['meta']['description']);
 ?>
@@ -70,7 +70,14 @@ $page_description = $page_description ?? e($salon['meta']['description']);
     }
     </script>
 </head>
-<body<?= $page === 'index' ? ' class="has-hero"' : '' ?>>
+<?php
+$body_class = match ($page) {
+    'index' => 'has-hero',
+    'behandlingar' => 'has-treatment',
+    default => '',
+};
+?>
+<body<?= $body_class ? " class=\"$body_class\"" : '' ?>>
     <a href="#main" class="skip-link">Hoppa till innehåll</a>
 
     <header class="site-header">

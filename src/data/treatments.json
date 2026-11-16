@@ -1,0 +1,660 @@
+[
+  {
+    "id": "svensk-klassisk-massage",
+    "hero_heading": "Boka Svensk Klassisk Massage i Katrineholm",
+    "hero_description": "Att vara ny till massage gör Klassisk Svensk Massage till en perfekt start. Det kan användas både för avslappning och lindring av muskelvärk och är känd för sina djupgående och mångsidiga tekniker. Förutom att bidra till muskelavslappning och ökad blodcirkulation minskar Svensk Massage mängden av stresshormon i kroppen och sänker blodtrycket, vilket leder till bättre välmående och högre kvalitet av sömn.",
+    "how_it_works_heading": "Hur går Svensk Klassisk Massage till?",
+    "how_it_works_paragraphs": [
+      "Under en session med Svensk Klassisk Massage tillämpas fem huvudsakliga tekniker: effleurage (långa, glidande rörelser), petrissage (knådning och lyftning av muskler), friction (cirkulära rörelser för djupare vävnader), tapotement (rytmiska, snabba rörelser) och vibration (skakande rörelser för att lugna nervsystemet). Oljor eller lotioner används för att minska friktionen och underlätta smidiga rörelser.",
+      "Under behandlingen kan du förvänta dig att teknikerna anpassas utifrån dina specifika behov och önskemål, vilket kan innebära fokus på särskilda problemområden eller en generell känsla av välbefinnande och avslappning. Efter behandlingen rekommenderas det att dricka mycket vatten för att hjälpa till att eliminera toxiner som frigjorts från musklerna. Det är också bra att vila och undvika ansträngande aktiviteter för att ge kroppen tid att återhämta sig. Viss mild ömhet kan förekomma, men bör avta inom ett par dagar. Ett varmt bad eller bastu kan förlänga de avslappnande effekterna av massagen."
+    ],
+    "booking_heading": "Boka din klassiska massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder följande massagebehandlingar för att passa dina behov. Du kan antingen köra halvkropp i 45 minuter eller välja helkroppsmassage i 60 eller 90 minuter. Eller varför inte lägga till IR bastu i din massageupplevelse för en mer holistisk hälsoupplevelse?",
+    "booking_cards": [
+      {
+        "label": "Svensk Klassisk Massage (Halvkropp)",
+        "price": 785,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/svensk-klassisk-massage-60-min-halvkropp-1049973"
+      },
+      {
+        "label": "Svensk Klassisk Massage (Helkropp)",
+        "price": 785,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/svensk-klassisk-massage-60-min-helkropp-344821"
+      },
+      {
+        "label": "Svensk Klassisk Massage (Helkropp)",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/svensk-klassisk-massage-90-min-helkropp-344820"
+      },
+      {
+        "label": "Svensk Klassisk Massage 60 min med 30 min IR Bastu",
+        "price": 1000,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/30-min-ir-bastu-och-60-min-svensk-klassisk-massage-2086946"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "En fantastisk helkroppsmassage!",
+        "quote": "En fantastisk helkroppsmassage! Nancy är mycket duktig massör!",
+        "name": "Ann W."
+      },
+      {
+        "heading": "Fantastisk 90 min helkroppsmassage!",
+        "quote": "Wow! Fantastisk 90 min helkroppsmassage",
+        "name": "Ljubana B."
+      },
+      {
+        "heading": "Känner mig så avslappnad o mjuk efter Nancys behandlingar!",
+        "quote": "Idag valde jag svensk klassisk halvkroppsmassage. Hon gör som alltid magi, känner mig så avslappnad o mjuk efter Nancys behandlingar!",
+        "name": "Emma J."
+      },
+      {
+        "heading": "Skön, avstressande upplevelse!",
+        "quote": "Helkroppsmassage i lugn miljö till soft musik. Skön, avstressande upplevelse.",
+        "name": "Eva F."
+      },
+      {
+        "heading": "Mycket fint bemötande och fantastisk helkroppsmassage!",
+        "quote": "Väldigt mysig och rogivande miljö, ett mycket fint bemötande och fantastisk helkroppsmassage!",
+        "name": "Kristin R."
+      },
+      {
+        "heading": "Klassisk svensk massage, perfekt för nybörjare!",
+        "quote": "Klassisk svensk massage, perfekt för nybörjare!",
+        "name": "Anna H."
+      },
+      {
+        "heading": "Rekommenderar helkroppsmassage varmt!",
+        "quote": "Helkroppsmassage rekommenderar varmt i den underbara miljön.",
+        "name": "Melinda B."
+      },
+      {
+        "heading": "Helt suverän massage!",
+        "quote": "Helt suverän massage! Så skön för hela kroppen",
+        "name": "Margita B."
+      },
+      {
+        "heading": "Alltid lika skönt med helkroppsmassage!",
+        "quote": "Alltid lika skönt med helkroppsmassage hos bästa Nancy.",
+        "name": "Linda H."
+      }
+    ],
+    "banner_image": "svensk-klassisk-massage-banner.jpg"
+  },
+  {
+    "id": "head-neck-shoulders",
+    "hero_heading": "Boka massage för nacke och axlar i Katrineholm",
+    "hero_description": "Om du har problem specifikt i huvud, axlar eller nacke erbjuder vi en massage där fokus läggs på att lindra spänningar och smärta i dessa områden. Denna behandling syftar till att förbättra blodcirkulationen, minska muskelspänningar och främja avslappning. Denna typ av massage är särskilt effektiv för personer som upplever huvudvärk, nacksmärta eller axelspänningar, ofta orsakade av dålig hållning samt långa stunder framför datorn.",
+    "how_it_works_heading": "Varför är det så vanligt att ha ont i huvud, axlar och nacke?",
+    "how_it_works_paragraphs": [
+      "Många upplever smärta i huvud, axlar och nacke på grund av dålig hållning och stillasittande livsstil. När vi sitter framför datorer eller mobiltelefoner under långa perioder tenderar vi att böja nacken framåt och lyfta axlarna, vilket belastar musklerna och lederna i dessa områden. Denna felaktiga kroppshållning kan leda till spänningar och smärta.",
+      "Stress och dålig ergonomi bidrar också till problemet. Stress kan orsaka muskelspänningar, vilket ofta manifesterar sig i huvudvärk och stelhet i nacke och axlar. Dålig ergonomi på arbetsplatsen, som felaktigt inställda stolar och skrivbord, förvärrar belastningen på musklerna och kan leda till långvariga smärtproblem om de inte åtgärdas."
+    ],
+    "booking_heading": "Boka din nack-och axel massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder en omfattande massagebehandling för huvud, axlar och nacke i 60 minuter. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Head, Neck & Shoulders",
+        "price": 785,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/head-neck-shoulders-60-min-2088231"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Känns som att jag kommer att bli mer hjälpt av Nancys massage än sjukgymnastiken!",
+        "quote": "Har haft muskel värk i min högra axel dryg två år. Varit hos många sjukgymnaster för behandling, inget som hjälp. Nu efter 30 minuter massage axel, skuldra, nacke fantastisk känsla efteråt avslappnad och mindre ont. Har bokat fler tider, känns som att jag kommer att bli mer hjälpt av Nancys massage än sjukgymnastiken.",
+        "name": "Leevi H."
+      },
+      {
+        "heading": "Jättenöjd med massage axlar och nacke!",
+        "quote": "Toppen! Jättenöjd med massage axlar och nacke. Går absolut hit fler gånger.",
+        "name": "Tony P."
+      },
+      {
+        "heading": "Kommer dit stel i axlar och nacke. Går därifrån smärtfri!",
+        "quote": "Tack Nancy för idag, kommer dit stel i axlar och nacke. Går därifrån smärtfri.",
+        "name": "Michael J."
+      }
+    ],
+    "banner_image": "head-neck-shoulders-banner.jpg"
+  },
+  {
+    "id": "djupvavnadsmassage",
+    "hero_heading": "Boka Djupvävnads-massage i Katrineholm",
+    "hero_description": "Djupvävnadsmassage är en kraftfull och terapeutisk massageteknik som syftar till att nå de djupare lagren av muskelvävnad och fascia (bindväv) i kroppen. Det är särskilt användbar för bl.a. personer med kroniska smärttillstånd, atleter och människor med ärrvävnad. Djupvävnadsmassage erbjuder fördelar för både fysisk och mental hälsa genom att lindra kronisk smärta, minska inflammation, öka blodflödet, förbättra muskel- och ledflexibilitet samt minska stresshormoner.",
+    "how_it_works_heading": "Skillnaden mellan djupvävnadsmassage och bindvävnadsmassage",
+    "how_it_works_paragraphs": [
+      "Djupvävnadsmassage och bindvävsmassage är kompletterande typer av massage som förbättrar kroppens funktion och lindrar smärta. Djupvävnadsmassage riktar sig mot djupa muskellager och används för kronisk smärta och muskelspänningar, medan bindvävsmassage fokuserar på fascian för att minska spänningar och förbättra hållningen. Båda erbjuder fördelar som minskad muskelspänning, bättre cirkulation och ökad rörelsefrihet.",
+      "Trots olika tekniker överlappar de två i sina fördelar och mål. Båda kan minska muskelspänningar och smärta, förbättra cirkulationen och främja bättre hållning och rörelse. Genom att förstå deras tekniker och fördelar kan man välja den massagetyp som bäst passar ens behov och bidra till bättre kroppslig hälsa."
+    ],
+    "booking_heading": "Boka din Djupvävnadsmassage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder följande massagebehandlingar för att passa dina behov. Du kan antingen köra djupvävnadsmassage i 60 eller 90 minuter. Och varför inte lägga till IR bastu i din massageupplevelse för en mer holistisk hälsoupplevelse?",
+    "booking_cards": [
+      {
+        "label": "Djupvävnadsmassage",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/djupvavnadsmassage-90-min-344819"
+      },
+      {
+        "label": "Djupvävnadsmassage",
+        "price": 869,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/djupvavnadsmassage-60-min-1308666"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Fantastisk bra behandling, bästa jag varit på!",
+        "quote": "Fantastisk bra behandling, bästa jag varit på! Valde 90 min bindvävsmassage och känner mig som en ny människa efteråt!",
+        "name": "Philip F."
+      },
+      {
+        "heading": "Helt underbar djupvävnadsmassage!",
+        "quote": "Helt underbar djupvävnadsmassage hos bästa Nancy",
+        "name": "Elisabeth K."
+      },
+      {
+        "heading": "Min kropp fick nytt liv efter 90 min djupvävnadsmassage!",
+        "quote": "Helt underbart och Nancy är så omhändertagande och noggrann. Min kropp fick nytt liv efter 90 min djupvävnadsmassage 🙂",
+        "name": "Marita S."
+      },
+      {
+        "heading": "Nancy är inkännande, lyssnar på behoven och är behagligt tyst under behandlingen.",
+        "quote": "Jag kan inget annat än att rekommendera Nancy och hennes behandlingar 🌸 90 minuter djupgående massage och jag klev utanför dörren som en ny människa! Nancy är inkännande, lyssnar på behoven och är behagligt tyst under behandlingen vilket jag verkligen behövde just idag. Tack 🙏",
+        "name": "Linda M."
+      },
+      {
+        "heading": "Djupvävnadsmassage var toppen!",
+        "quote": "Djupvävnadsmassage var toppen! 👍",
+        "name": "Anna H."
+      },
+      {
+        "heading": "Känner mig som ny!",
+        "quote": "Tog djupvävsmassage och efteråt känner man sig som ny.",
+        "name": "Annelie S."
+      },
+      {
+        "heading": "Jag valde djupvävnadsmassage o kom ut mkt mjukare i kroppen!",
+        "quote": "Nancy är väldigt skicklig! Jag valde djupvävnadsmassage o kom ut mkt mjukare i kroppen! Jag kommer gå dit fler gånger 🙂",
+        "name": "Emma J."
+      },
+      {
+        "heading": "Bland den bästa massagen jag gått på. Rekommenderar verkligen!",
+        "quote": "Jag fick en djupvävsmassage och det var otroligt bra! Bland den bästa massagen jag gått på 🙂 Rekommenderar verkligen!",
+        "name": "Sara K."
+      },
+      {
+        "heading": "Hela kroppen vart genomgången och utförandet var perfekt!",
+        "quote": "Provade en djupvävnadsmassage och vart jättenöjd. Spänningshuvudvärken försvann och det kändes som man äntligen vart avslappnad i nacken. Hela kroppen vart genomgången och utförandet var perfekt, inte för löst och inte för hårt.",
+        "name": "Kristian S."
+      },
+      {
+        "heading": "Känner mig som en ny människa idag efter djupvävnads massage!",
+        "quote": "Känner mig som en ny människa idag efter djupvävnads massage 90 min. Så duktig är Nancy.",
+        "name": "Johanna T."
+      }
+    ],
+    "banner_image": "djupvavnadsmassage-banner.jpg"
+  },
+  {
+    "id": "lymfmassage",
+    "hero_heading": "Boka Lymfmassage i Katrineholm",
+    "hero_description": "Lymfmassage är en skonsam massageteknik som främst riktar sig till individer som söker fördelar såsom avgiftning, svullnadslindring och förbättrat immunförsvar. Genom lätta tryck och rytmiska rörelser kan lymfmassagen underlätta avlägsnandet av toxiner och överskottsvätska, främja hudhälsa samt minska stressnivåer för förbättrad mental hälsa. Denna behandling är särskilt fördelaktig för personer med lymfödem, kronisk smärta och de som återhämtar sig efter kirurgi.",
+    "how_it_works_heading": "Vad är lymfsystemet och varför är det viktigt?",
+    "how_it_works_paragraphs": [
+      "Lymfsystemet utgör en väsentlig del av kroppens immunförsvar genom att rensa kroppen från toxiner och avfall. Med lymfkärl, lymfvätska och lymfkörtlar spridda i kroppen, stöder systemet bekämpningen mot infektioner. Lymfan, som innehåller vita blodkroppar, transporteras av kärlen för att rena kroppen från skadliga patogener.",
+      "En effektiv lymfatisk dränering är avgörande för att undvika inflammation, svullnad och bibehålla god hälsa. Aktiviteter som motion, djupandning och lymfmassage kan upprätthålla systemets optimala funktion och främja övergripande välmående."
+    ],
+    "booking_heading": "Boka din Lymfmassage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder Lymfmassage i 90 minuter där IR Bastu kan läggas till för att förstärka effekterna och få en mer holistisk hälsoupplevelse. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Lymfmassage",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/lymfmassage-90-min-320441"
+      },
+      {
+        "label": "Lymfmassage 90 min med 30 min IR Bastu",
+        "price": 1245,
+        "duration": "120 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/30-min-ir-bastu-och-90-min-lymfmassage-2088092"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Underbar och omhändertagande med fin service!",
+        "quote": "Underbar & omhändertagande lymfmassage med fin service! Kan varmt rekommenderas.",
+        "name": "Ulrica E."
+      },
+      {
+        "heading": "Annorlunda och mycket behaglig och bra!",
+        "quote": "Nancy gav mig lymfmassage och den var annorlunda och mycket behaglig och bra. Tack Nancy!",
+        "name": "Leo L."
+      },
+      {
+        "heading": "Lymfmassagen va så skön!",
+        "quote": "Lymfmassagen va så skön! Nancy är verkligen proffsig! Jag kommer tillbaka!",
+        "name": "Emma J."
+      }
+    ],
+    "banner_image": "lymfmassage-banner.jpg"
+  },
+  {
+    "id": "koppning",
+    "hero_heading": "Boka Koppningsmassage i Katrineholm",
+    "hero_description": "Koppning är en alternativ medicinsk metod som innebär att små, kupade glas- eller plastkoppar används för att skapa ett vakuum på huden. Behandlingen riktar sig främst till idrottare, personer med kroniska smärttillstånd och de som söker avslappning och förbättrat välbefinnande. Fördelarna inkluderar förbättrad blodcirkulation, minskad muskelspänning samy lindring av smärta och inflammation.",
+    "how_it_works_heading": "Är koppning farligt?",
+    "how_it_works_paragraphs": [
+      "Koppning är generellt sett inte farligt när den utförs av en utbildad och erfaren massageterapeut. Under behandlingen placeras koppar på huden för att skapa ett vakuum, vilket kan orsaka temporära blåmärken eller rodnad som normalt försvinner inom några dagar. Vissa kan uppleva obehag eller lätt smärta, särskilt de med känslig hud eller låg smärttröskel. Det är viktigt att undvika koppning på skadad hud, öppna sår eller infekterade områden.",
+      "För att minimera riskerna följs riktlinjer för hygien och säkerhet och det är även viktigt för mig att ha en dialog med dig innan för att diskutera eventuella hälsoproblem. Om du är gravid, har blodproppar eller blödarsjuka, bör du undvika koppning. Efter behandlingen rekommenderas det att dricka mycket vatten för att hjälpa kroppen att eliminera toxiner och undvika intensiv fysisk aktivitet."
+    ],
+    "booking_heading": "Boka din koppningsbehandling idag",
+    "booking_intro": "CML Massage & Wellness erbjuder följande koppningsbehandlingar för att passa dina behov. Du kan antingen köra halvkropp i 45 minuter eller välja helkroppsmassage i 60 eller 90 minuter. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Koppning (Helkropp)",
+        "price": 785,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/koppning-60-min-helkropp-320443"
+      },
+      {
+        "label": "Koppning (Helkropp)",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/koppning-90-min-helkropp-320442"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Min personliga favorit är Koppningen!",
+        "quote": "Jag har testat Aroma Thaimassage, Djupvävsmassage och Koppning. Alla 3 var riktigt bra men min personliga favorit är Koppningen. Nancy är väldigt professionell i sitt jobb. Rekommenderas!",
+        "name": "Sara S."
+      }
+    ],
+    "banner_image": "koppning-banner.jpg"
+  },
+  {
+    "id": "taktil-massage",
+    "hero_heading": "Boka Taktil Massage i Katrineholm",
+    "hero_description": "Taktil massage är en mild beröringsterapi där kroppens lugn- och ro-system stimuleras genom långsamma, mjuka strykningar över huden. Behandlingen riktar sig främst till personer med hög stress eller ångest, äldre individer, och de med kroniska smärttillstånd eller funktionsnedsättningar. Fördelarna inkluderar minskad stress och ångest, förbättrad sömnkvalitet, lindring av kronisk smärta och ökad produktion av oxytocin, vilket främjar välbefinnande.",
+    "how_it_works_heading": "Vad innebär Taktil Massage?",
+    "how_it_works_paragraphs": [
+      "Taktil massage skiljer sig från andra massageformer då man inte knådar och använder tryck alls. Istället läggs fokuset på mjuka, långsamma strykningar som utförs med lätt beröring över hela kroppen. Målet är att stimulera kroppens känselreceptorer och främja frisättningen av oxytocin, ett hormon som bidrar till avslappning och välbefinnande. Denna metod har en lugnande effekt på nervsystemet och används för att minska stress, ångest och smärta.",
+      "Taktil massage skapar en trygg och avslappnad atmosfär, vilket är särskilt gynnsamt för personer med kroniska smärttillstånd, äldre och de med psykiska eller fysiska funktionsnedsättningar. Genom att förbättra kroppens egen förmåga att läka och återhämta sig, stödjer taktil massage både fysisk och psykisk hälsa, vilket gör den till en värdefull komplementär behandling i olika vårdsituationer."
+    ],
+    "booking_heading": "Boka din Taktil Massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder Taktil Massage i 60 eller 90 minuter. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Taktil Massage",
+        "price": 785,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/taktil-massage-60-min-fram-eller-baksida-3307850"
+      },
+      {
+        "label": "Taktil Massage",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/taktil-massage-90-min-344814"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Kommer absolut gå tillbaka. Rekommenderas!",
+        "quote": "Fint kundbemötande, härlig och lugn atmosfär och riktigt bra massage! Kommer absolut gå tillbaka. Rekommenderas!",
+        "name": "Christine E."
+      },
+      {
+        "heading": "Total avslappning och vill inte att massagentiden ska ta slut!",
+        "quote": "Lika fantastiskt varje gång! Total avslappning och vill inte att massagentiden ska ta slut. Rekommenderar Nancy till 100%.",
+        "name": "Ulrika H."
+      },
+      {
+        "heading": "Nancy är i en klass för sig!",
+        "quote": "Nancy är i en klass för sig, prövat på olika behandlingar och så nöjd. Kan starkt rekommendera ett besök.",
+        "name": "Ann-Sofie P."
+      },
+      {
+        "heading": "Har varit på många massagebehandlingar men inget går upp mot detta!",
+        "quote": "Har varit på många massagebehandlingar men inget går upp mot detta!!!",
+        "name": "Carina N."
+      },
+      {
+        "heading": "Är själv certifierad massör och kräsen men det här är världsklass!",
+        "quote": "Som alltid den bästa massagen ever… Så avslappnad, ompysslad och full av energi efteråt. Jag är själv certifierad massör och kräsen men det här är världsklass på flera nivåer med små detaljer som ger extra guldkant och gör att du som kund känner dig trygg hela vägen.",
+        "name": "Anki S."
+      },
+      {
+        "heading": "Rekommenderar verkligen att boka en tid till Nancy!",
+        "quote": "Trevlig och professionell, har kunden i fokus. Avslappnande miljö. Rekommenderar verkligen att boka en tid till Nancy.",
+        "name": "Madelene J."
+      },
+      {
+        "heading": "Ser redan fram emot nästa besök!",
+        "quote": "Som alltid mår jag bra när jag varit hos Nancy. Ser redan fram emot nästa besök.",
+        "name": "Michael J."
+      },
+      {
+        "heading": "Tog bort en hel del av min ryggsmärta!",
+        "quote": "En skön massage som tog bort en hel del av min ryggsmärta",
+        "name": "Christina L."
+      },
+      {
+        "heading": "Kommer boka in mig kontinuerligt!",
+        "quote": "Massagen var mycket grundligt utförd, behaglig och välgörande. Kommer boka in mig kontinuerligt",
+        "name": "Tomas N."
+      },
+      {
+        "heading": "Kommer alltid ut som en helt ny människa!",
+        "quote": "HELT OTROLIG!!! Kommer alltid ut som en helt ny människa. Nancy är bäst i stan!",
+        "name": "Nora P."
+      }
+    ],
+    "banner_image": "taktil-massage-banner.jpg"
+  },
+  {
+    "id": "hot-stone-massage",
+    "hero_heading": "Boka Hot Stone Massage i Katrineholm",
+    "hero_description": "Hot Stone Massage är en terapeutisk behandling där uppvärmda stenar används för att ge djup avslappning samt lindra muskelspänningar och smärta. Den riktar sig främst till personer med muskel- och ledvärk, stressade individer, idrottare och personer med sömnbesvär. De många fördelarna inkluderar förbättrad blodcirkulation, minskad stress och ångest samt förbättrad hudhälsa och allmänt välmående.",
+    "how_it_works_heading": "Hur går Hot Stone Massage till?",
+    "how_it_works_paragraphs": [
+      "En Hot Stone Massage-session börjar med att basaltstenar väljs och värms upp till 45-60 grader Celsius. Efter en konsultation för att förstå dina specifika behov placeras de varma stenarna på strategiska punkter såsom ryggraden, handflatorna och magen för att värma upp musklerna. De uppvärmda stenarna används sedan tillsammans med massageolja för att massera kroppen med långa, svepande och cirkulära rörelser.",
+      "Under behandlingen kan du förvänta dig en kombination av värmeterapi och djupvävnadsmassage som bidrar till avslappning av hela kroppen och effektivt lindrar muskelvärk. Efter behandlingen rekommenderas det att dricka mycket vatten för att hjälpa kroppen att spola ut de toxiner som frigjorts. Förutom att känna sig avslappnad är det också vanligt att känna sig trött efter massagen, så det kan vara bra att planera in en lugn aktivitet eller vila efteråt."
+    ],
+    "booking_heading": "Boka din Hot Stone Massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder Hot Stone Massage i 60 eller 90 minuter. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Hot Stone Massage",
+        "price": 800,
+        "duration": "60 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/hot-stone-massage-60-min-344816"
+      },
+      {
+        "label": "Hot Stone Massage",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/hot-stone-massage-90-min-320445"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Härlig hot stone massage i vinterkylan!",
+        "quote": "Härlig hot stone massage i vinterkylan! Nancy var väldigt bra och gjorde massagestunden till en timmes ren avkoppling!",
+        "name": "Susanne S."
+      },
+      {
+        "heading": "Hot stone är verkligen att rekommendera!",
+        "quote": "Alltid nöjd efter ha varit hos Nancy, hot stone är verkligen att rekommendera",
+        "name": "Sandra J."
+      },
+      {
+        "heading": "Perfekt för en trött kropp!",
+        "quote": "Hot Stone massage hos Nancy, perfekt för en trött kropp.",
+        "name": "Michael J."
+      },
+      {
+        "heading": "Hot stone massage, superhärligt!",
+        "quote": "Hot stone massage, superhärligt!",
+        "name": "Emelie O."
+      },
+      {
+        "heading": "Hot stone massage idag, helt underbart!",
+        "quote": "Hot stone massage idag, helt underbart.",
+        "name": "Ann D."
+      },
+      {
+        "heading": "Kan varmt rekommendera Nancys hot stone massage!",
+        "quote": "Hotstone behandling kan jag \"varmt\" rekommendera. Proffsigt behandlat från början till slut.",
+        "name": "Maria K."
+      },
+      {
+        "heading": "Provade Hot stone massage, härligt och avslappnande!",
+        "quote": "Rekommenderar detta ställe, jag provade Hot stone massage, härligt och avslappnande.",
+        "name": "Petra L."
+      },
+      {
+        "heading": "Hot stone massage var helt fantastiskt!",
+        "quote": "Provade Hot stone massage för första gången, var helt fantastiskt!",
+        "name": "Elin J."
+      },
+      {
+        "heading": "Rekommenderar hot stone massage, så skönt!",
+        "quote": "Rekommenderar hot stone massage, så skönt!",
+        "name": "Johanna S."
+      },
+      {
+        "heading": "En magisk hot stone massage!",
+        "quote": "En magisk hot stone massage som utfördes av en trevlig och proffsig massör, Nancy. Kommer garanterat tillbaka.",
+        "name": "Elisabeth K."
+      }
+    ],
+    "banner_image": "hot-stone-massage-banner.jpg"
+  },
+  {
+    "id": "body-clay-wrapping-relax",
+    "hero_heading": "Boka Body Clay Wrapping i Katrineholm",
+    "hero_description": "Body Clay Wrapping Relax är en spa-behandling där terapeutisk lera appliceras på kroppen följt av inslagning i folie och filtar. Behandlingen riktar sig främst till personer med torr eller oren hud, stressade individer samt de som vill förbättra hudton och minska celluliter. Fördelarna inkluderar avgiftning av huden, förbättrad blodcirkulation, återfuktning, näring, hudstramning och djup avslappning.",
+    "how_it_works_heading": "Hur går Body Clay Wrapping Relax till?",
+    "how_it_works_paragraphs": [
+      "En session med Body Clay Wrapping börjar med en konsultation där dina specifika behov och din hudtyp diskuteras. Huden rengörs noggrant innan varm lera appliceras jämnt över kroppen. Den vita leran hjälper till att dra ut toxiner och återfukta huden. Efter appliceringen sveps du in i plastfolie och värmefiltar för att öka kroppstemperaturen och öppna porerna, vilket förbättrar lerans effektivitet.",
+      "Under den 45 minuters långa viloperioden utförs en ansiktsmassage medan du slappnar av och leran verkar. Efter denna period sköljs leran av, och en body balm appliceras för att bevara fukt och göra huden ännu lenare. Du kan förvänta dig en djupt avslappnande upplevelse som lämnar huden mjukare, mer strålande och renare. Behandlingen främjar både fysisk och mental välbefinnande genom kombinationen av värmeterapi och lerans naturliga avgiftande egenskaper."
+    ],
+    "booking_heading": "Boka din Body Clay Wrapping Relax idag",
+    "booking_intro": "Body Clay Wrapping Relax är en holistisk helhetsomfattande hälsoupplevelse som pågår under 180 minuter. Kom in och testa hos CML Massage & Wellness och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Body Clay Wrapping Relax",
+        "price": 2300,
+        "duration": "180 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/body-clay-wrapping-relax-1767708"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Kommer absolut gå tillbaka. Rekommenderas!",
+        "quote": "Fint kundbemötande, härlig och lugn atmosfär och riktigt bra massage! Kommer absolut gå tillbaka. Rekommenderas!",
+        "name": "Christine E."
+      },
+      {
+        "heading": "Är själv certifierad massör och kräsen men det här är världsklass!",
+        "quote": "Som alltid den bästa massagen ever… Så avslappnad, ompysslad och full av energi efteråt.",
+        "name": "Anki S."
+      },
+      {
+        "heading": "Kommer alltid ut som en helt ny människa!",
+        "quote": "HELT OTROLIG!!! Kommer alltid ut som en helt ny människa. Nancy är bäst i stan!",
+        "name": "Nora P."
+      },
+      {
+        "heading": "Kommer definitivt boka mer massage där!",
+        "quote": "Det var fantastiskt, jätte mysigt och avslappnande miljö. Upplevelsen av massagen var underbart. Nancy är såååå duktig och jätte trevligt bemötande. Kommer definitivt boka fler massage där.",
+        "name": "Tamara V."
+      },
+      {
+        "heading": "Nancy är i en klass för sig!",
+        "quote": "Nancy är i en klass för sig, prövat på olika behandlingar och så nöjd. Kan starkt rekommendera ett besök.",
+        "name": "Ann-Sofie P."
+      }
+    ],
+    "banner_image": "body-clay-wrapping-relax-banner.jpg"
+  },
+  {
+    "id": "aroma-scrub-massage",
+    "hero_heading": "Boka Aroma Scrub Massage i Katrineholm",
+    "hero_description": "Aroma Scrub Massage är en terapeutisk behandling som kombinerar aromaterapi, kroppsskrubb och massage för att exfoliera huden, förbättra blodcirkulationen och ge djup avslappning. Den riktar sig främst till personer med torr eller tråkig hud, stressade individer samt de med muskelspänningar. Fördelarna inkluderar mjukare hud, minskad stress, förbättrad cirkulation och långvarig lindring av muskelvärk.",
+    "how_it_works_heading": "Hur går Aroma Scrub Massage till?",
+    "how_it_works_paragraphs": [
+      "Under en Aroma Scrub Massage-session börjar behandlingen med en noggrann exfoliering med en aromatisk skrubb. Terapeuten applicerar skrubben med cirkulära rörelser för att avlägsna döda hudceller och förbättra hudens textur. Efter en uppfriskande dusch för att ta bort skrubbpartiklarna, följer en avslappnande massage med eteriska oljor.",
+      "Massagen innefattar strykningar, knådningar och tryckpunktsmassage, vilket hjälper till att arbeta in oljorna djupt i huden och musklerna. Den täcker hela kroppen och främjar muskelavslappning samt ökar blodcirkulationen, vilket ger en djupgående effekt. Efter massagen får klienten vila insvept i en varm handduk för att absorbera oljorna och förlänga avslappningseffekten. Det rekommenderas att dricka mycket vatten efter behandlingen för att hjälpa kroppen att eliminera toxiner som frigjorts under exfolieringen och massagen."
+    ],
+    "booking_heading": "Boka din Aroma Scrub Massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder Aroma Scrub Massage i 90 minuter där en av två olika dofter kan väljas för en helhetsomfattande hälsoupplevelse. Boka din behandling och känn effekten redan idag!",
+    "booking_cards": [
+      {
+        "label": "Aromaterapi Scrub Massage med doft av chocklad",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/aromaterapi-scrub-massage-med-doft-av-chocklad-3071345"
+      },
+      {
+        "label": "Aromaterapi Scrub Massage med doft av citrongräs och rosmarin",
+        "price": 1177,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/aromaterapi-scrub-massage-med-doft-av-citrongras-och-rosmarin-1805988"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Nancy är en enastående terapeut!",
+        "quote": "90 min SPA Bodyscrub. Otrolig behandling med produkter från Maria Åkerberg. Nancy är en enastående terapeut med känsla för integritet och lyssnar till önskemål. Bodyscrub, dusch, balm och massage. Kliver in i helgen som en ny människa! Tusen tack som alltid",
+        "name": "Sebastian M."
+      },
+      {
+        "heading": "Är själv certifierad massör och kräsen men det här är världsklass!",
+        "quote": "Som alltid den bästa massagen ever… Så avslappnad, ompysslad och full av energi efteråt.",
+        "name": "Anki S."
+      },
+      {
+        "heading": "Jag går på massage regelbundet hos Nancy!",
+        "quote": "Nancy är en mycket kunnig massör och en inkännande och omtänksam person, en mycket bra kombination för en massör. Jag går på massage regelbundet hos Nancy och kan med det varmaste rekommendera henne.",
+        "name": "Monica H."
+      },
+      {
+        "heading": "Kommer alltid ut som en helt ny människa!",
+        "quote": "HELT OTROLIG!!! Kommer alltid ut som en helt ny människa. Nancy är bäst i stan!",
+        "name": "Nora P."
+      },
+      {
+        "heading": "Har varit på många massagebehandlingar men inget går upp mot detta!",
+        "quote": "Har varit på många massagebehandlingar men inget går upp mot detta!!!",
+        "name": "Carina N."
+      }
+    ],
+    "banner_image": "aroma-scrub-massage-banner.jpg"
+  },
+  {
+    "id": "top-to-toe-deluxe-detox",
+    "hero_heading": "Boka Helkropps Spa Massage i Katrineholm",
+    "hero_description": "Top-to-Toe Deluxe Detox är en helkroppsbehandling som erbjuder en komplett detox från topp till tå. Denna lyxiga behandling består av en havssalt-body scrub som öppnar porerna och gör huden len, följt av en näringsrik alginpackning och ansiktskur. Behandlingen avslutas med en 60-minuters avkopplande helkroppsmassage med body balm. Perfekt för dig som söker både djup avkoppling och en boost för kroppens immunförsvar.",
+    "how_it_works_heading": "Hur går Top-to-Toe Deluxe Detox till?",
+    "how_it_works_paragraphs": [
+      "En session med Top-to-Toe Deluxe Detox börjar med att diskutera ifall spirulinan som kommer användas eventuellt skulle kunna skapa hudproblem eller liknande. Spirulina kan bl.a. orsaka problem med sköldkörteln. Första timmen består av en helkropps-body scrub där kroppen skrubbas med halvssalt för att öka blodcirkulationen. Body scruben har även en exfolierande effekt för huden.",
+      "Andra timmen består av en helkroppsinpackning av alger samtidigt som du får en ansiktskur som bl.a. består av ansiktsmask och ansiktsmassage. Behandlingen avslutas med att du duschar av algerna och får en avslappnande 60-minuters helkropps-spamassage med body balm. Din hud kommer vara lenare och ditt sinne kommer vara lugnare."
+    ],
+    "booking_heading": "Boka din Top-to-Toe Deluxe Detox idag",
+    "booking_intro": "Top-to-Toe Deluxe Detox är vår längsta behandling på 3h. En omfattande behandling för total avslappning. Boka din behandling hos CML Massage & Wellness och känn effekterna redan idag!",
+    "booking_cards": [
+      {
+        "label": "Top to Toe Deluxe Detox",
+        "price": 2300,
+        "duration": "180 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/top-to-toe-deluxe-detox-1767704"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Är själv certifierad massör och kräsen men det här är världsklass!",
+        "quote": "Som alltid den bästa massagen ever… Så avslappnad, ompysslad och full av energi efteråt.",
+        "name": "Anki S."
+      },
+      {
+        "heading": "Redan efter en behandling märkte jag en STOR förbättring!",
+        "quote": "Jag har spänningsrelaterad migrän. Redan efter en behandling märkte jag en STOR förbättring. Nu har jag hunnit gå ett antal gånger och känner mig VÄLDIGT NÖJD. Tack för att du finns Nancy!",
+        "name": "Lars E."
+      },
+      {
+        "heading": "Tog bort en hel del av min ryggsmärta!",
+        "quote": "En skön massage som tog bort en hel del av min ryggsmärta",
+        "name": "Christina L."
+      },
+      {
+        "heading": "Total avslappning!",
+        "quote": "Lika fantastiskt varje gång! Total avslappning och vill inte att massagentiden ska ta slut. Rekommenderar Nancy till 100%.",
+        "name": "Ulrika H."
+      },
+      {
+        "heading": "Nancy är den bästa i Katrineholm!",
+        "quote": "Nancy är helt toppen att bli masserad av, hon har ett bra handlag och man känner sig som en ny människa efter behandlingen. Jag kan verkligen rekommendera Nancy, hon är den bästa i Katrineholm 🙂",
+        "name": "Helena W."
+      }
+    ],
+    "banner_image": "top-to-toe-deluxe-detox-banner.jpg"
+  },
+  {
+    "id": "ir-bastu-och-massage",
+    "hero_heading": "Boka IR-Bastu med Massage i Katrineholm",
+    "hero_description": "IR Bastu, eller infraröd bastu, använder infrarött ljus för att värma upp kroppen direkt, till skillnad från traditionella bastur som värmer luften runt dig. När det kombineras med massage, främjar det djupare muskelavslappning och förbättrad cirkulation. Denna behandling funkar alla men riktar sig främst till personer med kronisk smärta, idrottsutövare som söker snabbare återhämtning, och individer som vill förbättra sin hudhälsa. Fördelarna inkluderar förbättrad blodcirkulation, djupare muskelavslappning, ökad avgiftning genom svettning, lindring av muskel- och ledsmärtor samt en förbättrad hudton och elasticitet.",
+    "extra_sections": [
+      {
+        "heading": "Två basturum",
+        "paragraphs": [
+          "CML Massage & Wellness har två basturum och två IR-bastur. Den ena är något mindre med plats för två personer och den andra har plats för fyra personer. Båda bastur hålls rena när de inte används och värms alltid upp till 65°C innan du använder de för att se till att hälsofördelarna kan ha full effekt.",
+          "Till båda bastur kan alla typer av massage som kan kombineras med IR bastu läggas till, och vilket rum och bastu som väljs beror enbart på vilken som använts tidigare på dagen och som är tillgängligt. Oavsett vilken bastu du väljer är du inne för en avkopplande upplevelse."
+        ]
+      },
+      {
+        "heading": "Ta en uppfriskande dusch efter din bastu",
+        "paragraphs": [
+          "CML Massage & Wellness erbjuder också en lyxig duschupplevelse. Att ta en dusch efter bastun har många fördelar. Det hjälper till att skölja bort svett och toxiner som frigörs under bastubadet, vilket lämnar huden ren och fräsch. En dusch efter bastun bidrar också till att svalka ner kroppen gradvis, vilket kan minska risken för yrsel eller obehag.",
+          "Självklart kommer du befinna dig i en lugn och ostörd miljö under din duschtid. Utöver det får du också rena handdukar både under din bastutid men också efter duschen."
+        ]
+      }
+    ],
+    "how_it_works_heading": null,
+    "how_it_works_paragraphs": [],
+    "booking_heading": "Boka IR Bastu och Massage idag",
+    "booking_intro": "CML Massage & Wellness erbjuder följande kombinationer av massage och bastu för att passa dina behov. Du kan antingen välja valfri massage med 45 minuter bastu eller 30 minuter bastu och en av de nedan. På plats finns även två bastur att välja på.",
+    "booking_cards": [
+      {
+        "label": "Valfri Massage 60 min med 45 min IR Bastu",
+        "price": 1149,
+        "duration": "105 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/45-min-ir-bastu-och-60-min-valfri-massage-1767717"
+      },
+      {
+        "label": "Djupvävnadsmassage 60 min med 30 min IR Bastu",
+        "price": 1000,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/30-min-ir-bastu-och-60-min-djupvavnadsmassage-2088093"
+      },
+      {
+        "label": "Lymfmassage 90 min med 30 min IR Bastu",
+        "price": 1245,
+        "duration": "120 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/30-min-ir-bastu-och-90-min-lymfmassage-2088092"
+      },
+      {
+        "label": "Svensk Klassisk Massage 60 min med 30 min IR Bastu",
+        "price": 1000,
+        "duration": "90 minuter",
+        "bokadirekt_url": "https://www.bokadirekt.se/boka-tjanst/cml-massage-wellness-katrineholm-33316/30-min-ir-bastu-och-60-min-svensk-klassisk-massage-2086946"
+      }
+    ],
+    "reviews": [
+      {
+        "heading": "Varit på IR-bastu & massage. Helt underbart!",
+        "quote": "Varit på IR-bastu & massage. Helt underbart. Nancy är så duktig",
+        "name": "Margareta P."
+      },
+      {
+        "heading": "En skön upplevelse med IR bastu och massage!",
+        "quote": "En skön upplevelse i 90 min med bastu och massage",
+        "name": "Evelina J."
+      },
+      {
+        "heading": "Skönt med bastu och därefter en helt fantastisk massage!",
+        "quote": "Skönt med bastu och därefter en helt fantastisk massage!",
+        "name": "Linda H."
+      }
+    ],
+    "banner_image": "ir-bastu-och-massage-banner.jpg"
+  }
+]

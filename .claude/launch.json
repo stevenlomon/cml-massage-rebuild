@@ -4,7 +4,7 @@
     {
       "name": "php-dev",
       "runtimeExecutable": "php",
-      "runtimeArgs": ["-S", "localhost:8001"],
+      "runtimeArgs": ["-S", "localhost:8001", "router.php"],
       "port": 8001
     }
   ]

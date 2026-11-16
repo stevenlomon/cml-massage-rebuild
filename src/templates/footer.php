@@ -27,7 +27,7 @@ $services = get_services();
                     <h3>Behandlingar</h3>
                     <ul class="footer-treatments">
                         <?php foreach ($services as $service): ?>
-                            <li><a href="/#<?= e($service['id']) ?>"><?= e($service['title']) ?></a></li>
+                            <li><a href="/behandlingar/<?= e($service['id']) ?>"><?= e($service['title']) ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

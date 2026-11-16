@@ -118,6 +118,52 @@ document.addEventListener('DOMContentLoaded', () => {
         updateQ();
     }
 
+    const treatReviews = document.querySelector('.treatment-reviews-carousel');
+    if (treatReviews) {
+        const tTrack = treatReviews.querySelector('.treatment-reviews-track');
+        const tCards = tTrack.querySelectorAll('.review-card');
+        const tPrev = document.querySelector('.treatment-reviews-prev');
+        const tNext = document.querySelector('.treatment-reviews-next');
+        const tBar = document.querySelector('.treatment-reviews-progress-bar');
+        const tTotal = tCards.length;
+        let tIndex = 0;
+
+        function getTVisible() {
+            const w = tCards[0].offsetWidth;
+            const gap = 28.8;
+            return Math.floor((window.innerWidth - tTrack.offsetLeft) / (w + gap)) || 1;
+        }
+
+        function getTMax() {
+            return Math.max(0, tTotal - getTVisible());
+        }
+
+        function updateT() {
+            const gap = 28.8;
+            const offset = tIndex * (tCards[0].offsetWidth + gap);
+            tTrack.style.transform = `translateX(-${offset}px)`;
+            const maxIdx = getTMax();
+            const progress = maxIdx > 0 ? ((tIndex + 1) / (maxIdx + 1)) * 100 : 100;
+            tBar.style.width = `${progress}%`;
+            tPrev.disabled = tIndex <= 0;
+            tNext.disabled = tIndex >= maxIdx;
+        }
+
+        tPrev.addEventListener('click', () => { if (tIndex > 0) { tIndex--; updateT(); } });
+        tNext.addEventListener('click', () => { if (tIndex < getTMax()) { tIndex++; updateT(); } });
+
+        let tResize;
+        window.addEventListener('resize', () => {
+            clearTimeout(tResize);
+            tResize = setTimeout(() => {
+                if (tIndex > getTMax()) tIndex = getTMax();
+                updateT();
+            }, 100);
+        });
+
+        updateT();
+    }
+
     const textarea = document.querySelector('.contact-form textarea');
     if (textarea) {
         const charEl = document.querySelector('.char-count');
