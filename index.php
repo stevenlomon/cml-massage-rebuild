@@ -230,7 +230,8 @@ $stars = str_repeat($star_svg, 5);
                     <input type="tel" name="phone" placeholder="Ditt Telefonnummer">
                     <textarea name="message" placeholder="Ditt Meddelande" rows="6" required></textarea>
                     <div class="form-counter"><span class="char-count">0</span> karaktärer / <span class="word-count">0</span> ord</div>
-                    <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off">
+                    <label for="website" class="honeypot">Webbplats</label>
+                    <input type="text" name="website" id="website" class="honeypot" tabindex="-1" autocomplete="off">
                     <button type="submit" class="btn btn-submit">Skicka</button>
                 </form>
             </div>
