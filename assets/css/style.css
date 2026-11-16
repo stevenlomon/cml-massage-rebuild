@@ -751,6 +751,7 @@ h3 {
 
 .reviews-carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .reviews-track {
@@ -1597,6 +1598,7 @@ h3 {
 
 .treatment-reviews-carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .treatment-reviews-track {
@@ -1663,6 +1665,7 @@ h3 {
 
 .quals-carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .quals-track {
