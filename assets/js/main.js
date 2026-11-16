@@ -1,3 +1,24 @@
+function addSwipe(el, onLeft, onRight) {
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+    el.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        tracking = true;
+    }, { passive: true });
+    el.addEventListener('touchend', (e) => {
+        if (!tracking) return;
+        tracking = false;
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+            if (dx < 0) onLeft();
+            else onRight();
+        }
+    }, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('#main-nav');
@@ -69,6 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
 
+        addSwipe(track,
+            () => { if (index < getMaxIndex()) { index++; update(); } },
+            () => { if (index > 0) { index--; update(); } }
+        );
+
         update();
     }
 
@@ -115,6 +141,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
 
+        addSwipe(qTrack,
+            () => { if (qIndex < getQMax()) { qIndex++; updateQ(); } },
+            () => { if (qIndex > 0) { qIndex--; updateQ(); } }
+        );
+
         updateQ();
     }
 
@@ -160,6 +191,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateT();
             }, 100);
         });
+
+        addSwipe(tTrack,
+            () => { if (tIndex < getTMax()) { tIndex++; updateT(); } },
+            () => { if (tIndex > 0) { tIndex--; updateT(); } }
+        );
 
         updateT();
     }
