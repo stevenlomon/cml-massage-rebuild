@@ -957,7 +957,7 @@ h3 {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #999;
+    color: #767676;
 }
 
 .contact-form input:focus,
@@ -973,7 +973,7 @@ h3 {
 
 .form-counter {
     font-size: 0.85rem;
-    color: #767676;
+    color: #6b6b6b;
     margin-top: -0.5rem;
 }
 
