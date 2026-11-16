@@ -60,7 +60,19 @@ $check_svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widt
 <?php if (!empty($treatment['extra_sections'] ?? [])): ?>
     <?php foreach ($treatment['extra_sections'] as $i => $section): ?>
     <?php $section_img = $section['image'] ?? $service['image']; ?>
-    <section class="about-banner <?= $i % 2 === 0 ? '' : 'about-banner--reversed' ?>">
+    <?php $reversed = $i % 2 !== 0; ?>
+    <section class="about-banner <?= $reversed ? 'about-banner--reversed' : '' ?>">
+        <?php if ($reversed): ?>
+        <div class="about-banner-content">
+            <h2><?= e($section['heading']) ?></h2>
+            <?php foreach ($section['paragraphs'] as $p): ?>
+                <p><?= e($p) ?></p>
+            <?php endforeach; ?>
+        </div>
+        <div class="about-banner-image">
+            <img src="/assets/images/<?= e($section_img) ?>" alt="<?= e($section['heading']) ?>" width="957" height="640" loading="lazy">
+        </div>
+        <?php else: ?>
         <div class="about-banner-image">
             <img src="/assets/images/<?= e($section_img) ?>" alt="<?= e($section['heading']) ?>" width="957" height="640" loading="lazy">
         </div>
@@ -70,6 +82,7 @@ $check_svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widt
                 <p><?= e($p) ?></p>
             <?php endforeach; ?>
         </div>
+        <?php endif; ?>
     </section>
     <?php endforeach; ?>
 <?php endif; ?>
