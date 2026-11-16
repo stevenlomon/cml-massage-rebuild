@@ -1785,6 +1785,11 @@ h3 {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+    .has-treatment .site-header {
+        position: relative;
+        z-index: 100;
+    }
+
     .nav-toggle {
         display: block;
     }
@@ -1798,6 +1803,7 @@ h3 {
         background: var(--color-bg);
         box-shadow: 0 4px 8px rgba(17, 63, 83, 0.1);
         padding: 1rem 1.5rem;
+        z-index: 200;
     }
 
     .main-nav.is-open {
