@@ -1,4 +1,4 @@
-# CML Massage & Wellness — Arkitekturmigrering & Prestandarefaktorering
+# CML Massage & Wellness: Arkitekturmigrering & Prestandarefaktorering
 
 Produktionssajt: [cmlmassagewellness.se](https://www.cmlmassagewellness.se/)  
 Teknisk stack: Vanilla PHP 8.x, Semantisk HTML5, Modern CSS (Custom Properties), GitHub Actions (CI/CD)
@@ -108,3 +108,5 @@ Nedladdning av den aktiva WordPress-installationen (webroots/www) till en isoler
 ```bash
 sftp -P 22 -r cirq67giw_ssh@ssh.cirq67giw.service.one:webroots/www ~/Documents/cml_backup
 ```
+## Resultat efter Rebuild
+<img width="1888" height="1009" alt="Screenshot_2026-11-16_16-06-01" src="https://github.com/user-attachments/assets/58b6dbbc-b602-4a86-965b-03ab7ab4bbbd" />
